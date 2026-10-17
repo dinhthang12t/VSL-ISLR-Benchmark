@@ -2,28 +2,43 @@
 
 Resources for **A Comparative Study of Temporal Modeling for Large-Scale Vietnamese Isolated Sign Language Recognition**.
 
-> Publication draft: replace all `[TO COMPLETE: ...]` fields and verify the release contents before publishing. This document does not establish that code, videos, checkpoints, or new experimental results have already been released.
+**Repository:** [dinhthang12t/VSL-ISLR-Benchmark](https://github.com/dinhthang12t/VSL-ISLR-Benchmark).
+
+Implementation files are maintained under `src/` in this repository. Data-access links and experiment resources are documented below as they become available.
+
+> Before publication, complete the fields marked `[TO COMPLETE]` and ensure that the resources described below are actually included or linked.
 
 ## Overview
 
-This project compares temporal modeling approaches for Vietnamese isolated sign language recognition, including 2D CNN features with mean pooling or GRU aggregation, 3D CNNs, video transformers, and pose-based temporal graph models.
+This project compares temporal modeling approaches for Vietnamese isolated sign language recognition (ISLR), including:
 
-Two evaluation protocols are distinguished:
+- 2D CNN features with mean pooling or GRU aggregation.
+- 3D CNN-based spatiotemporal models.
+- Video transformers.
+- Pose-based temporal graph models.
 
-1. **Class-stratified protocol with signer overlap:** the original evaluation setting. Signers may occur in multiple splits; results do not establish generalization to unseen signers.
-2. **Signer-independent 447-class protocol:** an additional benchmark with mutually disjoint training, validation, and test signer sets.
+The repository uses a simple structure. Implementation files are organized under `src/`; installation, configuration and experiment instructions are documented in this README.
 
-## Dataset versions
+```text
+VSL-ISLR-Benchmark/
+├── README.md
+├── DATA_LICENSE.md
+└── src/
+```
 
-| Resource | Videos | Classes | Signers | Description |
-|---|---:|---:|---:|---|
-| Full corpus described in the manuscript | 10,515 | 3,659 | To be verified | Full-corpus counts must be reconciled against the final release manifest. |
-| Current signer-annotated metadata | 7,664 | 1,182 | 57 | Corrected metadata supplied for split construction. |
-| Signer-independent benchmark | 4,252 | 447 | 50 | Filtered benchmark used for unseen-signer evaluation. |
+Code license: `[TO COMPLETE: selected code license and its location]`.
 
-The earlier manuscript reports 7,665 benchmark videos. The current metadata contains 7,664 unique video IDs after a duplicate-ID correction. Verify the corrected annotation against the source video before freezing the release. Do not silently combine results generated from different metadata versions.
+## Evaluation protocols
 
-### Signer-independent split
+### Original class-stratified protocol
+
+The original experiments use class-stratified splits with signer overlap. These results compare models under that protocol and do not establish generalization to unseen signers.
+
+The current corrected metadata contains **7,664 videos across 1,182 classes and 57 signer IDs**. The earlier manuscript reports 7,665 videos; identify the exact manifest version used for the original experiments and document the duplicate-ID correction. Do not present the original results as having been recomputed unless they have been rerun.
+
+### Signer-independent protocol
+
+The additional benchmark contains **4,252 videos across 447 classes and 50 signers**. The split package is dated **9 October 2026**. Use this 447-class partition consistently; do not mix its manifests with the alternative 572-class partition.
 
 | Split | Videos | Signers | Classes | Video share |
 |---|---:|---:|---:|---:|
@@ -32,111 +47,158 @@ The earlier manuscript reports 7,665 benchmark videos. The current metadata cont
 | Test | 887 | 12 | 447 | 20.86% |
 | Total | 4,252 | 50 | 447 | 100% |
 
-Every retained class appears in all three splits. Class counts are shared vocabulary counts and must not be added across splits. Signer separation relies on the accuracy of the annotated identities.
+No signer appears in more than one split. Every retained class is represented in all three splits. Signer independence is conditional on consistent and accurate signer annotation. The total class count is the shared vocabulary size, not the sum of the three class counts.
 
-The split was selected using multistart local search with seed `20261009`, 100 initializations, and up to 80 improvement steps per initialization. The search favors class coverage while constraining training video share to 55–65% and validation/test shares to 15–25%. It does not use recognition accuracy to select the partition. Global optimality is not certified.
+The partition was selected using 100 multistart local-search runs with seed `20261009` and up to 80 single-signer improvement steps per initialization, prioritizing retained-class coverage while constraining training share to 55–65% and validation/test shares to 15–25%. Global optimality is not certified. The search does not use test recognition scores.
 
-Of 1,182 source classes, 489 contain fewer than three signers. A further 246 classes are excluded under the selected joint coverage/ratio solution; this does not prove they are impossible under every alternative assignment. The full manifest preserves all excluded rows. Training averages 5.24 videos per class, but some classes have only one training video.
+The remaining **3,412 videos across 735 classes** are excluded from this benchmark and preserved in the full manifest. Of these classes, 489 have fewer than three signers; another 246 are excluded under the selected joint coverage/ratio solution. The latter are not proven impossible under every assignment.
 
-## Metadata and manifests
+## Dataset access and metadata
 
-| Column | Meaning |
+Project repository: [https://github.com/dinhthang12t/VSL-ISLR-Benchmark](https://github.com/dinhthang12t/VSL-ISLR-Benchmark).
+
+Dataset and predefined split access: `[TO COMPLETE: exact file paths in the repository or a separate dataset URL/DOI]`. The repository URL identifies the project; it does not by itself confirm that video files or every split manifest have been uploaded.
+
+Source-video access instructions: `[TO COMPLETE: verified provenance and access information]`.
+
+Metadata fields:
+
+| Column | Description |
 |---|---|
-| `ID_video` | Video identifier; match to the corresponding local filename. |
+| `ID_video` | Video identifier. |
 | `Meaning` | Vietnamese sign-class label. |
-| `Duration (s)` | Clip duration in seconds. |
-| `Signer` | Annotated signer identifier; treat as an opaque ID, not a demographic attribute. |
-| `split` | Original class-stratified assignment (`train`, `valid`, `test`). |
-| `split_signer_independent` | New assignment (`train`, `val`, `test`, or `excluded` in the full manifest). |
+| `Duration (s)` | Video duration in seconds. |
+| `Signer` | Annotated signer identifier. |
+| `split` | Original class-stratified split: train/valid/test. |
+| `split_signer_independent` | New split: train/val/test, or excluded in the full manifest. |
 
-Use `split_signer_independent` for the 447-class protocol. The benchmark-only CSV contains no `excluded` rows. If exporting separate train/val/test files, derive them directly from the frozen manifest.
+For the new benchmark, use **`split_signer_independent`**, not `split`. The benchmark-only file `ISLR_447classes_4252videos.csv` has no excluded rows. Metadata and splits can be hosted separately from the code; link their actual location above rather than assuming additional repository folders.
 
-Suggested release layout; include a path below only after adding the actual resource:
+Public source videos are not automatically redistributable. See [DATA_LICENSE.md](DATA_LICENSE.md) for source rights and release conditions.
 
-```text
-metadata/
-  dataset_metadata.csv
-splits/
-  class_stratified/
-  signer_independent_447/
-    ISLR_447classes_4252videos.csv
-    ISLR_447_all_rows.csv
-    class_split_audit.csv
-    signer_assignment.csv
-    validation_checks.csv
-configs/
-src/
-scripts/
-results/
-docs/
-  reproduction.md
-  model_details.md
-README.md
-DATA_LICENSE.md
-LICENSE
-requirements.txt
+## 447-class split package
+
+The following resources accompany the split package. Link their actual download location in the data-access section above; the table does not assume additional code directories outside `src/`.
+
+| File | Contents and use |
+|---|---|
+| `ISLR_447classes_4252videos.csv` | Filtered benchmark manifest: 4,252 rows across 447 classes; use for training and evaluation. |
+| `ISLR_447_all_rows.csv` | Complete 7,664-row source manifest; 3,412 videos across 735 excluded classes remain marked `excluded`. |
+| `class_split_audit.csv` | Audit of all 1,182 source classes, with video/signer counts, new split counts, and retention/exclusion status. |
+| `signer_assignment.csv` | All 57 source signer IDs: 50 have benchmark videos and seven are marked `not_in_benchmark`. The latter are outside this benchmark, not unidentified signers. |
+| `validation_checks.csv` | Pairwise signer-overlap checks, video-ID uniqueness, and coverage of all 447 classes across the three splits. |
+| `split_summary.json` | Machine-readable split statistics and search settings. |
+| `Reviewer_responses_VI.md` / `Reviewer_responses_EN.md` | Revision working documents addressing six comments from Reviewer 1 and ten from Reviewer 2; distinguish completed split preparation from pending experiments. These are supplementary revision materials, not benchmark results. |
+
+The source `README_447.md` stated 51 retained signers and six excluded signers. Those figures have been corrected here against `signer_assignment.csv`: **25 + 13 + 12 = 50 retained signers**, and **57 − 50 = 7 signers outside the benchmark**.
+
+### Copying videos into split folders
+
+When adapting a copy script written for the original CSV, read `row["split_signer_independent"]` instead of `row["split"]`. Copy videos into `<output>/<train|val|test>/<Meaning>/`, preserving the correspondence with `ID_video`. The benchmark-only CSV needs no exclusion filter. When using the complete manifest, skip rows marked `excluded`.
+
+A signer must keep the same ID across different clothing, backgrounds or recording sessions. Such changes do not make the person a new signer.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/dinhthang12t/VSL-ISLR-Benchmark.git
+cd VSL-ISLR-Benchmark
 ```
 
-## Data access
+### Environment reported in the manuscript
 
-- Metadata and frozen splits: `[TO COMPLETE: repository path and versioned URL/DOI]`.
-- Source provenance and access instructions: `[TO COMPLETE: source registry, original URLs, clip boundaries, and applicable permissions]`.
-- Redistributable video files, if authorized: `[TO COMPLETE: scope and download location; otherwise state that videos are not redistributed]`.
+The following information is taken from Sections 3.2 and 4.2 of the supplied manuscript. It describes the reported original experiments; it must be checked against the implementation and logs before being used as the configuration of a new run.
 
-The manuscript identifies YouTube and QIPEDC as source collections. Public accessibility alone does not establish permission to redistribute or relicense their videos. See [DATA_LICENSE.md](DATA_LICENSE.md). Internal video identifiers alone may not enable independent acquisition; supply source mappings and temporal boundaries where permitted.
+| Item | Reported setting |
+|---|---|
+| Hardware | A single NVIDIA A100 GPU; GPU memory capacity is not specified. |
+| Training precision | Mixed precision. |
+| Runtime measurement precision | FP16 inference. |
+| Python version | Not specified in the manuscript; record the version from the actual environment. |
+| Deep-learning framework/version | Not specified in the manuscript; record the actual framework and version. |
+| CUDA, cuDNN and dependency versions | Not specified in the manuscript; export them from the actual environment. |
 
-## Setup and reproduction
+Installation instructions: `[TO COMPLETE: tested commands and dependency versions for the implementation under src/]`.
 
-Implementation release: `[TO COMPLETE: code URL, release tag/commit]`.
+The manuscript does not provide a dependency installation command. Do not infer package versions, an A100 memory capacity, or a CUDA version from the GPU model.
 
-Before publishing, document the tested Python, framework, CUDA and dependency versions in `requirements.txt` and `docs/reproduction.md`. Include tested commands with actual script arguments; executable training commands are intentionally not invented in this draft.
+## Running the experiments
 
-For every reported model, provide:
+### Training configuration reported in Section 4.2
 
-- Exact backbone variant, initialization/pretraining dataset and checkpoint provenance.
-- Input frame count, image resolution, temporal sampling, normalization and augmentation.
-- Frozen layers, optimizer, learning rates, regularization, batch size and stopping rule.
-- GRU configuration and tuning budget where applicable.
-- Seeds, checkpoint-selection rule, hardware and evaluation settings.
-- Mapping from each manuscript table/figure to its configuration and command.
+| Setting | Value |
+|---|---|
+| Optimizer | AdamW |
+| Backbone learning rate | `1e-4` |
+| Classification-head learning rate | `1e-3` |
+| Weight decay | `1e-4` |
+| Label smoothing | `0.05` |
+| Reported batch size | `16`; effective batch size requires the accumulation factor. |
+| Maximum epochs | `300` |
+| Early-stopping patience | `10` epochs; monitored metric and minimum improvement are not specified. |
+| Gradient accumulation | Used; accumulation factor is not specified. |
+| Initialization | Pretrained weights; exact checkpoint sources are not specified. |
+| Fine-tuning | Early layers frozen; deeper layers and classification heads optimized. Exact frozen layers are not specified. |
+| Random seeds shown in the original multi-seed table | `42`, `123`, `2024`, for the models included in that table. |
 
-Train each protocol separately. Use validation only for tuning and checkpoint selection. Do not initialize the new evaluation from a checkpoint already fitted to videos/signers now in its test set. Use one consistent label mapping across all splits of a protocol; the two protocols have different label spaces.
+### Model inputs and preprocessing
 
-### Read and check the 447-class split
+| Pipeline | Frames | Spatial input / representation |
+|---|---:|---|
+| RGB models other than X3D | 64 | Generally `224 × 224`; C3D uses `112 × 112`. |
+| X3D | 16 | `224 × 224` according to the general resizing rule in Section 4.2. |
+| Pose-based models | 64 | 2D keypoints; training sequences may be cropped/dropped and padded within each batch. |
+
+RGB inputs use ImageNet normalization as reported in the manuscript. Section 3.2 describes uniform (`iter`), center-focused (`mid`), and mixed (`mix`) sampling. Section 4.2 uses different sampling terminology; reconcile these names with the implementation and identify the strategy used for each reported result before release.
+
+These original input configurations differ across architectures. They must not be described as a matched-frame/matched-resolution controlled comparison. If new controlled experiments use other inputs, report those settings separately.
+
+### Implementation entry points
+
+All implementation files are organized under `src/`. The manuscript does not specify their names or command-line arguments, so the following fields require the actual source code:
+
+- Training: `[TO COMPLETE: actual entry-point filename under src/ and tested command]`.
+- Evaluation: `[TO COMPLETE: actual entry-point filename under src/ and tested command]`.
+- Configuration: `[TO COMPLETE: actual source location or command-line options]`.
+
+For reproducibility, also record the exact backbone variants and checkpoint sources, frozen layers, gradient accumulation factor, early-stopping metric, and GRU hidden size/layers/directionality/dropout. These details cannot be recovered reliably from the manuscript alone.
+
+Train each protocol separately and select checkpoints using validation only. Do not use a checkpoint fitted to the original VSL split to establish independence on the new split. Use one consistent class-to-index mapping across train/validation/test within each protocol.
+
+For a local copy of the new manifest:
 
 ```python
 import pandas as pd
 
-df = pd.read_csv(
-    "splits/signer_independent_447/ISLR_447classes_4252videos.csv"
-)
-parts = {
-    s: df[df["split_signer_independent"] == s]
-    for s in ("train", "val", "test")
-}
-assert len(df) == 4252 and df["Meaning"].nunique() == 447
+df = pd.read_csv("ISLR_447classes_4252videos.csv")
+train = df[df["split_signer_independent"] == "train"]
+val = df[df["split_signer_independent"] == "val"]
+test = df[df["split_signer_independent"] == "test"]
+class_to_idx = {label: i for i, label in enumerate(sorted(df["Meaning"].unique()))}
+
 assert not df["ID_video"].duplicated().any()
 assert df.groupby("Signer")["split_signer_independent"].nunique().max() == 1
 assert df.groupby("Meaning")["split_signer_independent"].nunique().min() == 3
-class_to_idx = {label: i for i, label in enumerate(sorted(df["Meaning"].unique()))}
 ```
 
-## Results and interpretation
+## Results and limitations
 
-Report the two protocols in separate tables. Include Top-1, Top-5, Top-10 and Macro-F1, per-seed scores, mean ± sample standard deviation, and the exact run/configuration identifiers. Define head/medium/tail groups using training frequencies. Publish per-video predictions where permitted.
+Result access and reproduction instructions for manuscript tables/figures: `[TO COMPLETE: actual links, commands and configuration references]`.
 
-Result files and manuscript table mapping: `[TO COMPLETE: verified paths]`.
+Report the protocols separately, including Top-1/Top-5/Top-10 accuracy, Macro-F1, per-seed scores, and mean ± sample standard deviation. Document the mapping from each table to its experimental settings.
 
-Differences between the original and 447-class benchmarks cannot be attributed solely to signer overlap because the vocabulary and video composition also change. Qualitative Grad-CAM examples do not by themselves prove temporal reasoning or background invariance.
+The two benchmarks differ in vocabulary and video composition; accuracy differences cannot be attributed solely to signer overlap. The new training split averages 5.24 videos per class, and some classes have only one training video. Report uncertainty and avoid strong per-class claims from single test examples. The split does not enforce a minimum of three training videos or two training signers per class. Define head/medium/tail groups from training frequencies and report the corresponding support counts.
 
-## Licensing and citation
+Identity consistency, duplicate video content and labels have not been verified directly from source recordings during split construction. In particular, the label for `Y0668` follows the supplied corrected metadata rather than an independent video-content check. The full-corpus claim of over 80 signers requires separate verification; it must not be inferred from the 57 IDs in the supplied metadata. Completing the split alone does not satisfy the remaining experimental requests from reviewers.
 
-Data rights and access conditions are described in [DATA_LICENSE.md](DATA_LICENSE.md). Code licensing must be specified separately in `LICENSE`; do not assume it covers videos or pretrained weights.
+## Citation and contact
 
-Citation: `[TO COMPLETE: verified authors, publication details, DOI/arXiv URL, and BibTeX]`.
+Paper citation: `[TO COMPLETE: verified authors, publication details and DOI]`.
 
-## Contact and corrections
+Repository version: `[TO COMPLETE: release tag or commit]`.
 
 Maintainer/contact: `[TO COMPLETE: verified name and email]`.
 
-For annotation errors, provide the video ID, affected field and supporting information. Freeze revised manifests under a new version, document changes, and identify which version was used for each result. Rights holders may contact the maintainer about source attribution or access concerns.
+Report reproducibility or annotation issues through [GitHub Issues](https://github.com/dinhthang12t/VSL-ISLR-Benchmark/issues), including the affected video IDs and, for implementation issues, the repository commit and environment details. Changes to published manifests should receive a new version with a documented correction history.
