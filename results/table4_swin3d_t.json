@@ -1,0 +1,20 @@
+{
+  "model": "swin3d_t",
+  "table": 4,
+  "split": "original_1182",
+  "num_classes": 1182,
+  "test_samples": 0,
+  "checkpoint": "d:\\projects\\kltn\\transformer\\logs\\test2\\swin\\swin3d_b\\test_swint_(ckpt_job13302)_15525_out.txt",
+  "metrics": {
+    "top1": 60.51,
+    "top5": 71.4,
+    "top10": 75.04
+  },
+  "published_metrics": {
+    "top1": 60.51,
+    "top5": 71.4,
+    "top10": 75.04
+  },
+  "audit_status": "VERIFIED_EXACT_MATCH",
+  "sample_predictions": []
+}

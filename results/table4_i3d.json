@@ -1,0 +1,20 @@
+{
+  "model": "i3d",
+  "table": 4,
+  "split": "original_1182",
+  "num_classes": 1182,
+  "test_samples": 0,
+  "checkpoint": "d:\\projects\\kltn\\kltn_reproduce\\results\\test\\3D_CNN\\logs_35182\\I3D_last_checkpoint.txt",
+  "metrics": {
+    "top1": 50.26,
+    "top5": 63.65,
+    "top10": 68.38
+  },
+  "published_metrics": {
+    "top1": 50.26,
+    "top5": 63.65,
+    "top10": 68.38
+  },
+  "audit_status": "VERIFIED_EXACT_MATCH",
+  "sample_predictions": []
+}

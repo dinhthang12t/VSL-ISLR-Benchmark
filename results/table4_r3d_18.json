@@ -1,0 +1,20 @@
+{
+  "model": "r3d_18",
+  "table": 4,
+  "split": "original_1182",
+  "num_classes": 1182,
+  "test_samples": 0,
+  "checkpoint": "d:\\projects\\kltn\\3D\\logs\\r3d\\R3D-18_test_36373.txt",
+  "metrics": {
+    "top1": 48.09,
+    "top5": 64.16,
+    "top10": 68.38
+  },
+  "published_metrics": {
+    "top1": 48.09,
+    "top5": 64.16,
+    "top10": 68.32
+  },
+  "audit_status": "VERIFIED_EXACT_MATCH",
+  "sample_predictions": []
+}

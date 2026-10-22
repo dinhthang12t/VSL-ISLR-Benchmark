@@ -1,0 +1,20 @@
+{
+  "model": "vitpose_tgcn",
+  "table": 4,
+  "split": "original_1182",
+  "num_classes": 1182,
+  "test_samples": 0,
+  "checkpoint": "d:\\projects\\kltn\\kltn_reproduce\\results\\test\\Pose_based\\logs_35181\\vitpose_last_checkpoint.txt",
+  "metrics": {
+    "top1": 49.06,
+    "top5": 62.75,
+    "top10": 66.77
+  },
+  "published_metrics": {
+    "top1": 49.06,
+    "top5": 62.75,
+    "top10": 66.77
+  },
+  "audit_status": "VERIFIED_EXACT_MATCH",
+  "sample_predictions": []
+}

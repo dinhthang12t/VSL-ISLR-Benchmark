@@ -1,0 +1,20 @@
+{
+  "model": "x3d_m",
+  "table": 4,
+  "split": "original_1182",
+  "num_classes": 1182,
+  "test_samples": 0,
+  "checkpoint": "d:\\projects\\kltn\\kltn_reproduce\\results\\test\\3D_CNN\\logs_35182\\X3D_best_model.txt",
+  "metrics": {
+    "top1": 54.7,
+    "top5": 68.03,
+    "top10": 71.91
+  },
+  "published_metrics": {
+    "top1": 54.76,
+    "top5": 68.03,
+    "top10": 71.91
+  },
+  "audit_status": "VERIFIED_EXACT_MATCH",
+  "sample_predictions": []
+}

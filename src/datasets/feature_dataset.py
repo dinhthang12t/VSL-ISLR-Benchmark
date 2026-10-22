@@ -3,7 +3,6 @@ Feature Dataset for 2D CNN frame-level features (ResNet, EfficientNet, ConvNeXt)
 Loads pre-extracted .npy feature sequences [T=64, Feature_Dim].
 """
 
-import os
 from pathlib import Path
 from typing import Dict, Optional
 import numpy as np
@@ -20,6 +19,7 @@ class FeatureDataset(Dataset):
         class_to_id: Dict[str, int],
         input_dim: int = 2048,
         target_frames: int = 64,
+        standardize: bool = True,
         augment: bool = False,
     ):
         self.df = df.copy().reset_index(drop=True)
@@ -27,6 +27,7 @@ class FeatureDataset(Dataset):
         self.class_to_id = class_to_id
         self.input_dim = input_dim
         self.target_frames = target_frames
+        self.standardize = standardize
         self.augment = augment
 
         self.df["label_id"] = self.df["Meaning"].map(self.class_to_id)
@@ -61,6 +62,12 @@ class FeatureDataset(Dataset):
         elif t > self.target_frames:
             idxs = np.linspace(0, t - 1, self.target_frames).astype(int)
             data = data[idxs]
+
+        # Feature standardization per sample as used across 2D CNN & GRU/LSTM protocols
+        if self.standardize:
+            mean = data.mean()
+            std = data.std()
+            data = (data - mean) / (std + 1e-6)
 
         # Simple feature jitter augmentation
         if self.augment and np.random.rand() < 0.5:
