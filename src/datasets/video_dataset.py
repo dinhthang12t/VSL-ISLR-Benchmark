@@ -89,17 +89,30 @@ class VideoDataset(Dataset):
         video_dir: str,
         class_to_id: Dict[str, int],
         transforms: Optional[List] = None,
+        transform: Optional[object] = None,
         frames: int = 64,
+        num_frames: Optional[int] = None,
         crop_size: int = 224,
+        short_side: int = 256,
     ):
         self.df = df.copy().reset_index(drop=True)
         self.video_dir = Path(video_dir)
         self.class_to_id = class_to_id
-        self.transforms = transforms or []
-        self.frames = frames
-        self.crop_size = crop_size
 
-        self.df["label_id"] = self.df["Meaning"].map(self.class_to_id)
+        t = transform if transform is not None else transforms
+        if t is None:
+            self.transforms = []
+        elif isinstance(t, list):
+            self.transforms = t
+        else:
+            self.transforms = [t]
+
+        self.frames = num_frames if num_frames is not None else frames
+        self.crop_size = crop_size
+        self.short_side = short_side
+
+        label_col = "Meaning" if "Meaning" in self.df.columns else ("gloss" if "gloss" in self.df.columns else "label")
+        self.df["label_id"] = self.df[label_col].map(self.class_to_id)
         self.df = self.df.dropna(subset=["label_id"]).reset_index(drop=True)
         self.df["label_id"] = self.df["label_id"].astype(int)
 
@@ -115,7 +128,8 @@ class VideoDataset(Dataset):
 
     def __getitem__(self, idx: int):
         row = self.df.iloc[idx]
-        vid_id = str(row["ID_video"]).replace(".mp4", "").replace(".webm", "")
+        id_col = "ID_video" if "ID_video" in row else ("video" if "video" in row else "id")
+        vid_id = str(row[id_col]).replace(".mp4", "").replace(".webm", "")
         label = int(row["label_id"])
 
         video_path = self.find_video_path(vid_id)
@@ -127,5 +141,8 @@ class VideoDataset(Dataset):
         for t in self.transforms:
             imgs = t(imgs)
 
-        video_tensor = video_to_tensor_kinetics(imgs)
+        if not isinstance(imgs, torch.Tensor):
+            video_tensor = video_to_tensor_kinetics(imgs)
+        else:
+            video_tensor = imgs
         return video_tensor, torch.tensor(label, dtype=torch.long), vid_id

@@ -39,8 +39,17 @@ BACKBONE_DIMS = {
 
 def load_model(args, num_classes, device):
     mtype = args.model_type
-    ckpt = torch.load(args.checkpoint, map_location=device)
+    ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
     state_dict = ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt
+    # Clean keys if saved with wrapper prefixes (e.g. 'model.' or 'module.')
+    cleaned_state_dict = {}
+    for k, v in state_dict.items():
+        if k.startswith("model."):
+            cleaned_state_dict[k[6:]] = v
+        elif k.startswith("module."):
+            cleaned_state_dict[k[7:]] = v
+        else:
+            cleaned_state_dict[k] = v
 
     if mtype in ["2d_mean", "2d_gru", "2d_lstm"]:
         feat_dim = BACKBONE_DIMS.get(args.backbone, 2048)
@@ -63,7 +72,7 @@ def load_model(args, num_classes, device):
     else:
         raise ValueError(f"Unknown model_type: {mtype}")
 
-    model.load_state_dict(state_dict)
+    model.load_state_dict(cleaned_state_dict)
     model.to(device)
     model.eval()
     return model

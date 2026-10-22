@@ -14,35 +14,45 @@ import torch.nn as nn
 import torchvision.models.video as video_models
 
 
-def build_3d_model(model_name: str, num_classes: int, pretrained: bool = True) -> nn.Module:
+def build_3d_model(
+    model_name: str,
+    num_classes: int,
+    pretrained: bool = True,
+    freeze_early: bool = True,
+) -> nn.Module:
     name = model_name.lower()
 
     if name in ["x3d", "x3d_m"]:
         # PyTorchVideo X3D-M
         model = torch.hub.load("facebookresearch/pytorchvideo", "x3d_m", pretrained=pretrained)
-        # Freeze blocks 0 to 3, fine-tune block 4 and head
-        layers_to_freeze = ["blocks.0", "blocks.1", "blocks.2", "blocks.3"]
-        for param_name, param in model.named_parameters():
-            if any(l in param_name for l in layers_to_freeze):
-                param.requires_grad = False
-            else:
-                param.requires_grad = True
+        if freeze_early:
+            # Freeze blocks 0 to 3, fine-tune block 4 and head
+            layers_to_freeze = ["blocks.0", "blocks.1", "blocks.2", "blocks.3"]
+            for param_name, param in model.named_parameters():
+                if any(l in param_name for l in layers_to_freeze):
+                    param.requires_grad = False
+                else:
+                    param.requires_grad = True
 
         in_features = model.blocks[5].proj.in_features
-        model.blocks[5].proj = nn.Linear(in_features, num_classes)
+        model.blocks[5].proj = nn.Sequential(
+            nn.Dropout(p=0.3),
+            nn.Linear(in_features, num_classes),
+        )
         return model
 
     elif name in ["r3d_18", "r3d"]:
         # Torchvision R3D-18
         weights = video_models.R3D_18_Weights.KINETICS400_V1 if pretrained else None
         model = video_models.r3d_18(weights=weights)
-        # Freeze stem, layer1, layer2; fine-tune layer3, layer4, and head
-        layers_to_freeze = ["stem", "layer1", "layer2"]
-        for param_name, param in model.named_parameters():
-            if any(l in param_name for l in layers_to_freeze):
-                param.requires_grad = False
-            else:
-                param.requires_grad = True
+        if freeze_early:
+            # Freeze stem, layer1, layer2; fine-tune layer3, layer4, and head
+            layers_to_freeze = ["stem", "layer1", "layer2"]
+            for param_name, param in model.named_parameters():
+                if any(l in param_name for l in layers_to_freeze):
+                    param.requires_grad = False
+                else:
+                    param.requires_grad = True
 
         in_features = model.fc.in_features
         model.fc = nn.Linear(in_features, num_classes)
@@ -52,12 +62,13 @@ def build_3d_model(model_name: str, num_classes: int, pretrained: bool = True) -
         # Torchvision R(2+1)D-18
         weights = video_models.R2Plus1D_18_Weights.KINETICS400_V1 if pretrained else None
         model = video_models.r2plus1d_18(weights=weights)
-        layers_to_freeze = ["stem", "layer1", "layer2"]
-        for param_name, param in model.named_parameters():
-            if any(l in param_name for l in layers_to_freeze):
-                param.requires_grad = False
-            else:
-                param.requires_grad = True
+        if freeze_early:
+            layers_to_freeze = ["stem", "layer1", "layer2"]
+            for param_name, param in model.named_parameters():
+                if any(l in param_name for l in layers_to_freeze):
+                    param.requires_grad = False
+                else:
+                    param.requires_grad = True
 
         in_features = model.fc.in_features
         model.fc = nn.Linear(in_features, num_classes)

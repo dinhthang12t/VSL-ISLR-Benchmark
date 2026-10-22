@@ -4,6 +4,7 @@ Standardized on Kinetics-400 (for 3D CNNs / Swin3D) and ImageNet (for 2D CNNs).
 """
 
 import random
+from typing import Callable, List, Optional
 import cv2
 import numpy as np
 import torch
@@ -70,6 +71,30 @@ class RandomHorizontalFlip:
     def __call__(self, imgs: np.ndarray) -> np.ndarray:
         if random.random() < self.p:
             return imgs[:, :, ::-1, :]
+        return imgs
+
+
+class VideoNormalizeKinetics:
+    def __call__(self, imgs: np.ndarray) -> torch.Tensor:
+        if isinstance(imgs, np.ndarray):
+            return video_to_tensor_kinetics(imgs)
+        return imgs
+
+
+class VideoNormalizeImageNet:
+    def __call__(self, imgs: np.ndarray) -> torch.Tensor:
+        if isinstance(imgs, np.ndarray):
+            return video_to_tensor_imagenet(imgs)
+        return imgs
+
+
+class VideoCompose:
+    def __init__(self, transforms: List[Callable]):
+        self.transforms = transforms
+
+    def __call__(self, imgs):
+        for t in self.transforms:
+            imgs = t(imgs)
         return imgs
 
 

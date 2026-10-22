@@ -168,9 +168,17 @@ def main():
 
     if args.checkpoint and os.path.exists(args.checkpoint):
         print(f"Loading checkpoint: {args.checkpoint}")
-        ckpt = torch.load(args.checkpoint, map_location=device)
+        ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
         state_dict = ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt
-        model.load_state_dict(state_dict)
+        cleaned_sd = {}
+        for k, v in state_dict.items():
+            if k.startswith("model."):
+                cleaned_sd[k[6:]] = v
+            elif k.startswith("module."):
+                cleaned_sd[k[7:]] = v
+            else:
+                cleaned_sd[k] = v
+        model.load_state_dict(cleaned_sd)
         if "best_acc" in ckpt:
             best_val_acc = ckpt["best_acc"]
         if "epoch" in ckpt:
@@ -265,7 +273,7 @@ def main():
 
     # Final evaluation on test set using best checkpoint
     print(f"\nEvaluating Best Model ({best_ckpt_path}) on Test Set...")
-    best_ckpt = torch.load(best_ckpt_path, map_location=device)
+    best_ckpt = torch.load(best_ckpt_path, map_location=device, weights_only=False)
     model.load_state_dict(best_ckpt["model_state_dict"])
     t_loss, t_top1, t_top5, t_top10 = evaluate(model, test_loader, criterion, device)
     print(f"Final Test: Top-1: {t_top1:.2f}% | Top-5: {t_top5:.2f}% | Top-10: {t_top10:.2f}%")

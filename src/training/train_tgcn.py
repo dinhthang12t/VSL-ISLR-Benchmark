@@ -122,7 +122,7 @@ def main():
 
     if args.checkpoint and os.path.exists(args.checkpoint):
         print(f"Loading checkpoint: {args.checkpoint}")
-        ckpt = torch.load(args.checkpoint, map_location=device)
+        ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
         state_dict = ckpt["model_state_dict"] if "model_state_dict" in ckpt else ckpt
         model.load_state_dict(state_dict)
         if "best_acc" in ckpt:
@@ -214,7 +214,7 @@ def main():
         json.dump(history, f, indent=2)
 
     print(f"\nEvaluating Best TGCN Model ({best_ckpt_path}) on Test Set...")
-    best_ckpt = torch.load(best_ckpt_path, map_location=device)
+    best_ckpt = torch.load(best_ckpt_path, map_location=device, weights_only=False)
     model.load_state_dict(best_ckpt["model_state_dict"])
     t_loss, t_top1, t_top5, t_top10 = evaluate(model, test_loader, criterion, device)
     print(f"Final Test: Top-1: {t_top1:.2f}% | Top-5: {t_top5:.2f}% | Top-10: {t_top10:.2f}%")

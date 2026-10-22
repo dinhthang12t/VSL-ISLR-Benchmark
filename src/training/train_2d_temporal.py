@@ -79,10 +79,11 @@ def main():
     parser.add_argument("--feature_dir", type=str, required=True, help="Path to pre-extracted .npy features")
     parser.add_argument("--save_dir", type=str, default="checkpoints/2d_temporal")
     parser.add_argument("--backbone", type=str, default="resnet50", choices=list(BACKBONE_DIMS.keys()))
-    parser.add_argument("--model", type=str, default="gru", choices=["mean", "gru", "lstm"])
+    parser.add_argument("--model", "--temporal_type", dest="model", type=str, default="gru", choices=["mean", "gru", "lstm"])
     parser.add_argument("--hidden_dim", type=int, default=256)
     parser.add_argument("--num_layers", type=int, default=2)
     parser.add_argument("--dropout", type=float, default=0.3)
+    parser.add_argument("--head_dropout", type=float, default=0.3)
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--weight_decay", type=float, default=1e-4)
     parser.add_argument("--batch_size", type=int, default=32)
@@ -117,7 +118,7 @@ def main():
     # Test mode
     if args.mode == "test":
         if args.checkpoint and os.path.exists(args.checkpoint):
-            ckpt = torch.load(args.checkpoint, map_location=device)
+            ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
             state_dict = ckpt.get("model_state_dict", ckpt.get("state_dict", ckpt))
             model.load_state_dict(state_dict)
             print(f"Loaded checkpoint: {args.checkpoint}")
@@ -183,7 +184,7 @@ def main():
                 break
 
     # Final evaluation on test split using best model
-    best_ckpt = torch.load(save_path / "best_model.pth", map_location=device)
+    best_ckpt = torch.load(save_path / "best_model.pth", map_location=device, weights_only=False)
     model.load_state_dict(best_ckpt["model_state_dict"])
     _, t1, t5, t10 = evaluate(model, test_loader, criterion, device)
     print(f"\n=======================================================")

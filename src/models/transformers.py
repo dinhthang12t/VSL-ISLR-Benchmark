@@ -17,6 +17,7 @@ def build_transformer_model(
     num_classes: int,
     pretrained: bool = True,
     pretrained_path: str = None,
+    freeze_early: bool = True,
 ) -> nn.Module:
     name = model_name.lower()
 
@@ -26,7 +27,7 @@ def build_transformer_model(
         model = video_models.swin3d_t(weights=weights)
 
         if pretrained_path:
-            ckpt = torch.load(pretrained_path, map_location="cpu")
+            ckpt = torch.load(pretrained_path, map_location="cpu", weights_only=False)
             state_dict = ckpt.get("state_dict", ckpt)
             clean_sd = {k.replace("module.", ""): v for k, v in state_dict.items()}
             model.load_state_dict(clean_sd, strict=False)
