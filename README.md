@@ -147,8 +147,8 @@ The manuscript does not provide a dependency installation command. Do not infer 
 
 | Pipeline | Frames | Spatial input / representation |
 |---|---:|---|
-| RGB models other than X3D | 64 | Generally `224 × 224`; C3D uses `112 × 112`. |
-| X3D | 16 | `224 × 224` according to the general resizing rule in Section 4.2. |
+| RGB models | 64 | Generally `224 × 224`; C3D uses `112 × 112`. |
+| X3D | 64 | `224 × 224` according to the general resizing rule in Section 4.2. |
 | Pose-based models | 64 | 2D keypoints; training sequences may be cropped/dropped and padded within each batch. |
 
 RGB inputs use ImageNet normalization as reported in the manuscript. Section 3.2 describes uniform (`iter`), center-focused (`mid`), and mixed (`mix`) sampling. Section 4.2 uses different sampling terminology; reconcile these names with the implementation and identify the strategy used for each reported result before release.
