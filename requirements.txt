@@ -1,0 +1,25 @@
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Video I/O & Image Processing
+decord>=0.6.0
+opencv-python>=4.8.0
+pillow>=9.5.0
+
+# Scientific computing & Data Manipulation
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+
+# Video Backbones & Transformers
+pytorchvideo>=0.1.5
+transformers>=4.38.0
+huggingface_hub>=0.22.0
+safetensors>=0.4.0
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+tabulate>=0.9.0

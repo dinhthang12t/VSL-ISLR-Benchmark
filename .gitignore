@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# PyTorch / Deep Learning Checkpoints & Weights (>100MB forbidden on GitHub)
+checkpoints/
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.h5
+*.onnx
+*.tar.gz
+*.zip
+
+# Dataset files & Extracted features (Heavy binaries)
+video_raw/
+*.mp4
+*.webm
+*.avi
+*.mov
+*.mkv
+*.npy
+*.npz
+
+# Logs, temporary files, profiling
+logs/
+*.log
+wandb/
+runs/
+.pytest_cache/
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.ipynb_checkpoints/
