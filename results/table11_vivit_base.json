@@ -4,24 +4,24 @@
   "split": "signer_independent_447",
   "num_classes": 447,
   "test_samples": 887,
-  "checkpoint": "d:\\projects\\kltn\\hpc_reproduce\\checkpoints\\transformers\\vivit_base\\seed42_augsimple\\test_predictions.npz",
+  "checkpoint": "D:/projects/kltn/new_split/checkpoints/vivit_base/final/seed42/test_predictions.npz",
   "metrics": {
-    "top1": 29.43,
-    "top5": 51.63,
-    "top10": 59.75,
-    "macro_f1": 19.33,
-    "head_top1": 43.9,
-    "medium_top1": 23.13,
-    "tail_top1": 6.22
+    "top1": 21.87,
+    "top5": 44.87,
+    "top10": 55.92,
+    "macro_f1": 14.32,
+    "head_top1": 30.99,
+    "medium_top1": 19.4,
+    "tail_top1": 5.18
   },
   "published_metrics": {
-    "top1": 29.43,
-    "top5": 51.63,
-    "top10": 59.75,
-    "macro_f1": 19.33,
-    "head_top1": 43.9,
-    "medium_top1": 23.13,
-    "tail_top1": 6.22
+    "top1": 21.87,
+    "top5": 44.87,
+    "top10": 55.92,
+    "macro_f1": 14.32,
+    "head_top1": 30.99,
+    "medium_top1": 19.4,
+    "tail_top1": 5.18
   },
   "audit_status": "VERIFIED_EXACT_MATCH",
   "sample_predictions": [
@@ -52,79 +52,79 @@
     {
       "video_id": "A0055",
       "y_true": 61,
-      "y_pred_top1": 378,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "A0056",
       "y_true": 61,
-      "y_pred_top1": 61,
-      "correct": true
+      "y_pred_top1": 55,
+      "correct": false
     },
     {
       "video_id": "A0061",
       "y_true": 148,
-      "y_pred_top1": 378,
+      "y_pred_top1": 205,
       "correct": false
     },
     {
       "video_id": "A0074",
       "y_true": 377,
-      "y_pred_top1": 378,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "A0080",
       "y_true": 257,
-      "y_pred_top1": 411,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "A0081",
       "y_true": 257,
-      "y_pred_top1": 411,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "A0084",
       "y_true": 342,
-      "y_pred_top1": 378,
+      "y_pred_top1": 173,
       "correct": false
     },
     {
       "video_id": "A0184",
       "y_true": 412,
-      "y_pred_top1": 259,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
       "video_id": "A0185",
       "y_true": 412,
-      "y_pred_top1": 259,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
       "video_id": "A0190",
       "y_true": 13,
-      "y_pred_top1": 13,
-      "correct": true
+      "y_pred_top1": 102,
+      "correct": false
     },
     {
       "video_id": "A0191",
       "y_true": 13,
-      "y_pred_top1": 205,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
       "video_id": "A0195",
       "y_true": 12,
-      "y_pred_top1": 205,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
       "video_id": "A0196",
       "y_true": 12,
-      "y_pred_top1": 205,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
@@ -136,55 +136,55 @@
     {
       "video_id": "A0202",
       "y_true": 411,
-      "y_pred_top1": 205,
-      "correct": false
-    },
-    {
-      "video_id": "A0203",
-      "y_true": 411,
       "y_pred_top1": 411,
       "correct": true
     },
     {
+      "video_id": "A0203",
+      "y_true": 411,
+      "y_pred_top1": 282,
+      "correct": false
+    },
+    {
       "video_id": "A0208",
       "y_true": 171,
-      "y_pred_top1": 171,
-      "correct": true
+      "y_pred_top1": 64,
+      "correct": false
     },
     {
       "video_id": "A0226",
       "y_true": 363,
-      "y_pred_top1": 128,
+      "y_pred_top1": 282,
       "correct": false
     },
     {
       "video_id": "A0227",
       "y_true": 363,
-      "y_pred_top1": 128,
+      "y_pred_top1": 282,
       "correct": false
     },
     {
       "video_id": "A0228",
       "y_true": 363,
-      "y_pred_top1": 128,
+      "y_pred_top1": 282,
       "correct": false
     },
     {
       "video_id": "A0239",
       "y_true": 57,
-      "y_pred_top1": 27,
+      "y_pred_top1": 294,
       "correct": false
     },
     {
       "video_id": "A0240",
       "y_true": 57,
-      "y_pred_top1": 27,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "A0246",
       "y_true": 170,
-      "y_pred_top1": 294,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
@@ -196,43 +196,43 @@
     {
       "video_id": "A0288",
       "y_true": 71,
-      "y_pred_top1": 205,
+      "y_pred_top1": 440,
       "correct": false
     },
     {
       "video_id": "A0292",
       "y_true": 387,
-      "y_pred_top1": 387,
-      "correct": true
+      "y_pred_top1": 294,
+      "correct": false
     },
     {
       "video_id": "A0301",
       "y_true": 93,
-      "y_pred_top1": 205,
-      "correct": false
+      "y_pred_top1": 93,
+      "correct": true
     },
     {
       "video_id": "A0323",
       "y_true": 244,
-      "y_pred_top1": 244,
-      "correct": true
+      "y_pred_top1": 102,
+      "correct": false
     },
     {
       "video_id": "A0324",
       "y_true": 244,
-      "y_pred_top1": 411,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
       "video_id": "A0337",
       "y_true": 69,
-      "y_pred_top1": 432,
+      "y_pred_top1": 154,
       "correct": false
     },
     {
       "video_id": "A0338",
       "y_true": 69,
-      "y_pred_top1": 432,
+      "y_pred_top1": 303,
       "correct": false
     },
     {
@@ -250,61 +250,61 @@
     {
       "video_id": "A0387",
       "y_true": 344,
-      "y_pred_top1": 259,
+      "y_pred_top1": 193,
       "correct": false
     },
     {
       "video_id": "A0392",
       "y_true": 343,
-      "y_pred_top1": 378,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "A0393",
       "y_true": 343,
-      "y_pred_top1": 343,
-      "correct": true
+      "y_pred_top1": 79,
+      "correct": false
     },
     {
       "video_id": "A0420",
       "y_true": 243,
-      "y_pred_top1": 378,
+      "y_pred_top1": 445,
       "correct": false
     },
     {
       "video_id": "A0421",
       "y_true": 243,
-      "y_pred_top1": 411,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
       "video_id": "A0422",
       "y_true": 243,
-      "y_pred_top1": 411,
+      "y_pred_top1": 402,
       "correct": false
     },
     {
       "video_id": "A0453",
       "y_true": 166,
-      "y_pred_top1": 175,
+      "y_pred_top1": 145,
       "correct": false
     },
     {
       "video_id": "A0458",
       "y_true": 312,
-      "y_pred_top1": 437,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
       "video_id": "A0459",
       "y_true": 312,
-      "y_pred_top1": 369,
+      "y_pred_top1": 188,
       "correct": false
     },
     {
       "video_id": "A0464",
       "y_true": 313,
-      "y_pred_top1": 205,
+      "y_pred_top1": 350,
       "correct": false
     },
     {
@@ -328,62 +328,62 @@
     {
       "video_id": "A0492",
       "y_true": 370,
-      "y_pred_top1": 416,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
       "video_id": "A0493",
       "y_true": 370,
-      "y_pred_top1": 98,
-      "correct": false
+      "y_pred_top1": 370,
+      "correct": true
     },
     {
       "video_id": "A0498",
       "y_true": 362,
-      "y_pred_top1": 94,
+      "y_pred_top1": 433,
       "correct": false
     },
     {
       "video_id": "A0503",
       "y_true": 310,
-      "y_pred_top1": 205,
+      "y_pred_top1": 79,
       "correct": false
     },
     {
       "video_id": "A0504",
       "y_true": 310,
-      "y_pred_top1": 205,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "A0516",
       "y_true": 319,
-      "y_pred_top1": 146,
+      "y_pred_top1": 326,
       "correct": false
     },
     {
       "video_id": "A0517",
       "y_true": 319,
-      "y_pred_top1": 98,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "A0518",
       "y_true": 319,
-      "y_pred_top1": 98,
+      "y_pred_top1": 304,
       "correct": false
     },
     {
       "video_id": "A0605",
       "y_true": 44,
-      "y_pred_top1": 44,
-      "correct": true
+      "y_pred_top1": 416,
+      "correct": false
     },
     {
       "video_id": "A0606",
       "y_true": 44,
-      "y_pred_top1": 44,
-      "correct": true
+      "y_pred_top1": 416,
+      "correct": false
     },
     {
       "video_id": "A0607",
@@ -394,14 +394,14 @@
     {
       "video_id": "A0613",
       "y_true": 211,
-      "y_pred_top1": 211,
-      "correct": true
+      "y_pred_top1": 44,
+      "correct": false
     },
     {
       "video_id": "A0614",
       "y_true": 211,
-      "y_pred_top1": 211,
-      "correct": true
+      "y_pred_top1": 44,
+      "correct": false
     },
     {
       "video_id": "A0619",
@@ -424,85 +424,85 @@
     {
       "video_id": "A0662",
       "y_true": 286,
-      "y_pred_top1": 84,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "A0663",
       "y_true": 286,
-      "y_pred_top1": 113,
+      "y_pred_top1": 222,
       "correct": false
     },
     {
       "video_id": "A0664",
       "y_true": 286,
-      "y_pred_top1": 84,
+      "y_pred_top1": 91,
       "correct": false
     },
     {
       "video_id": "A0676",
       "y_true": 113,
-      "y_pred_top1": 89,
+      "y_pred_top1": 259,
       "correct": false
     },
     {
       "video_id": "A0677",
       "y_true": 113,
-      "y_pred_top1": 319,
+      "y_pred_top1": 259,
       "correct": false
     },
     {
       "video_id": "A0690",
       "y_true": 372,
-      "y_pred_top1": 87,
+      "y_pred_top1": 94,
       "correct": false
     },
     {
       "video_id": "A0691",
       "y_true": 372,
-      "y_pred_top1": 442,
+      "y_pred_top1": 79,
       "correct": false
     },
     {
       "video_id": "A0692",
       "y_true": 372,
-      "y_pred_top1": 442,
+      "y_pred_top1": 293,
       "correct": false
     },
     {
       "video_id": "A0725",
       "y_true": 198,
-      "y_pred_top1": 198,
-      "correct": true
+      "y_pred_top1": 12,
+      "correct": false
     },
     {
       "video_id": "A0726",
       "y_true": 198,
-      "y_pred_top1": 205,
+      "y_pred_top1": 114,
       "correct": false
     },
     {
       "video_id": "A0730",
       "y_true": 445,
-      "y_pred_top1": 445,
-      "correct": true
+      "y_pred_top1": 395,
+      "correct": false
     },
     {
       "video_id": "A0731",
       "y_true": 445,
-      "y_pred_top1": 445,
-      "correct": true
+      "y_pred_top1": 395,
+      "correct": false
     },
     {
       "video_id": "A0741",
       "y_true": 446,
-      "y_pred_top1": 207,
+      "y_pred_top1": 241,
       "correct": false
     },
     {
       "video_id": "A0742",
       "y_true": 446,
-      "y_pred_top1": 207,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
@@ -538,13 +538,13 @@
     {
       "video_id": "A0797",
       "y_true": 145,
-      "y_pred_top1": 427,
+      "y_pred_top1": 229,
       "correct": false
     },
     {
       "video_id": "A0798",
       "y_true": 145,
-      "y_pred_top1": 259,
+      "y_pred_top1": 229,
       "correct": false
     },
     {
@@ -562,44 +562,44 @@
     {
       "video_id": "A0845",
       "y_true": 266,
-      "y_pred_top1": 205,
+      "y_pred_top1": 369,
       "correct": false
     },
     {
       "video_id": "A0851",
       "y_true": 205,
-      "y_pred_top1": 205,
-      "correct": true
+      "y_pred_top1": 369,
+      "correct": false
     },
     {
       "video_id": "A0852",
       "y_true": 205,
-      "y_pred_top1": 205,
-      "correct": true
+      "y_pred_top1": 369,
+      "correct": false
     },
     {
       "video_id": "A0853",
       "y_true": 205,
-      "y_pred_top1": 205,
-      "correct": true
+      "y_pred_top1": 369,
+      "correct": false
     },
     {
       "video_id": "A0857",
       "y_true": 267,
-      "y_pred_top1": 267,
-      "correct": true
+      "y_pred_top1": 77,
+      "correct": false
     },
     {
       "video_id": "A0858",
       "y_true": 267,
-      "y_pred_top1": 267,
-      "correct": true
+      "y_pred_top1": 15,
+      "correct": false
     },
     {
       "video_id": "A0859",
       "y_true": 267,
-      "y_pred_top1": 267,
-      "correct": true
+      "y_pred_top1": 77,
+      "correct": false
     },
     {
       "video_id": "A0902",
@@ -616,8 +616,8 @@
     {
       "video_id": "B0005",
       "y_true": 138,
-      "y_pred_top1": 138,
-      "correct": true
+      "y_pred_top1": 359,
+      "correct": false
     },
     {
       "video_id": "B0006",
@@ -646,20 +646,20 @@
     {
       "video_id": "B0014",
       "y_true": 428,
-      "y_pred_top1": 407,
+      "y_pred_top1": 30,
       "correct": false
     },
     {
       "video_id": "B0015",
       "y_true": 395,
-      "y_pred_top1": 395,
-      "correct": true
+      "y_pred_top1": 393,
+      "correct": false
     },
     {
       "video_id": "B0016",
       "y_true": 395,
-      "y_pred_top1": 395,
-      "correct": true
+      "y_pred_top1": 393,
+      "correct": false
     },
     {
       "video_id": "B0017",
@@ -676,20 +676,20 @@
     {
       "video_id": "B0022",
       "y_true": 396,
-      "y_pred_top1": 396,
-      "correct": true
+      "y_pred_top1": 393,
+      "correct": false
     },
     {
       "video_id": "B0023",
       "y_true": 396,
-      "y_pred_top1": 259,
+      "y_pred_top1": 193,
       "correct": false
     },
     {
       "video_id": "B0024",
       "y_true": 396,
-      "y_pred_top1": 396,
-      "correct": true
+      "y_pred_top1": 393,
+      "correct": false
     },
     {
       "video_id": "B0029",
@@ -748,7 +748,7 @@
     {
       "video_id": "B0044",
       "y_true": 27,
-      "y_pred_top1": 205,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
@@ -760,7 +760,7 @@
     {
       "video_id": "B0046",
       "y_true": 27,
-      "y_pred_top1": 205,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
@@ -772,14 +772,14 @@
     {
       "video_id": "B0073",
       "y_true": 326,
-      "y_pred_top1": 205,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
       "video_id": "B0074",
       "y_true": 326,
-      "y_pred_top1": 205,
-      "correct": false
+      "y_pred_top1": 326,
+      "correct": true
     },
     {
       "video_id": "B0075",
@@ -820,7 +820,7 @@
     {
       "video_id": "B0127",
       "y_true": 275,
-      "y_pred_top1": 274,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
@@ -838,13 +838,13 @@
     {
       "video_id": "B0263",
       "y_true": 213,
-      "y_pred_top1": 213,
-      "correct": true
+      "y_pred_top1": 392,
+      "correct": false
     },
     {
       "video_id": "B0264",
       "y_true": 213,
-      "y_pred_top1": 216,
+      "y_pred_top1": 281,
       "correct": false
     },
     {
@@ -874,8 +874,8 @@
     {
       "video_id": "B0292",
       "y_true": 215,
-      "y_pred_top1": 215,
-      "correct": true
+      "y_pred_top1": 44,
+      "correct": false
     },
     {
       "video_id": "B0293",
@@ -886,31 +886,31 @@
     {
       "video_id": "B0294",
       "y_true": 215,
-      "y_pred_top1": 139,
-      "correct": false
+      "y_pred_top1": 215,
+      "correct": true
     },
     {
       "video_id": "B0371",
       "y_true": 75,
-      "y_pred_top1": 75,
-      "correct": true
+      "y_pred_top1": 131,
+      "correct": false
     },
     {
       "video_id": "B0372",
       "y_true": 75,
-      "y_pred_top1": 109,
+      "y_pred_top1": 406,
       "correct": false
     },
     {
       "video_id": "B0373",
       "y_true": 75,
-      "y_pred_top1": 310,
+      "y_pred_top1": 406,
       "correct": false
     },
     {
       "video_id": "B0374",
       "y_true": 75,
-      "y_pred_top1": 155,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
@@ -928,19 +928,19 @@
     {
       "video_id": "B0383",
       "y_true": 283,
-      "y_pred_top1": 350,
+      "y_pred_top1": 281,
       "correct": false
     },
     {
       "video_id": "B0384",
       "y_true": 283,
-      "y_pred_top1": 350,
+      "y_pred_top1": 281,
       "correct": false
     },
     {
       "video_id": "B0385",
       "y_true": 283,
-      "y_pred_top1": 350,
+      "y_pred_top1": 281,
       "correct": false
     },
     {
@@ -964,8 +964,8 @@
     {
       "video_id": "B0395",
       "y_true": 155,
-      "y_pred_top1": 155,
-      "correct": true
+      "y_pred_top1": 51,
+      "correct": false
     },
     {
       "video_id": "B0396",
@@ -976,13 +976,13 @@
     {
       "video_id": "B0408",
       "y_true": 281,
-      "y_pred_top1": 281,
-      "correct": true
+      "y_pred_top1": 242,
+      "correct": false
     },
     {
       "video_id": "B0409",
       "y_true": 281,
-      "y_pred_top1": 132,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
@@ -1006,43 +1006,43 @@
     {
       "video_id": "B0464",
       "y_true": 146,
-      "y_pred_top1": 326,
+      "y_pred_top1": 434,
       "correct": false
     },
     {
       "video_id": "B0469",
       "y_true": 207,
-      "y_pred_top1": 242,
+      "y_pred_top1": 402,
       "correct": false
     },
     {
       "video_id": "B0520",
       "y_true": 199,
-      "y_pred_top1": 199,
-      "correct": true
+      "y_pred_top1": 279,
+      "correct": false
     },
     {
       "video_id": "B0521",
       "y_true": 199,
-      "y_pred_top1": 199,
-      "correct": true
+      "y_pred_top1": 279,
+      "correct": false
     },
     {
       "video_id": "B0530",
       "y_true": 436,
-      "y_pred_top1": 442,
+      "y_pred_top1": 43,
       "correct": false
     },
     {
       "video_id": "B0531",
       "y_true": 436,
-      "y_pred_top1": 442,
+      "y_pred_top1": 226,
       "correct": false
     },
     {
       "video_id": "B0586",
       "y_true": 120,
-      "y_pred_top1": 303,
+      "y_pred_top1": 178,
       "correct": false
     },
     {
@@ -1060,13 +1060,13 @@
     {
       "video_id": "B0609",
       "y_true": 119,
-      "y_pred_top1": 91,
+      "y_pred_top1": 26,
       "correct": false
     },
     {
       "video_id": "B0610",
       "y_true": 119,
-      "y_pred_top1": 278,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
@@ -1084,44 +1084,44 @@
     {
       "video_id": "B0632",
       "y_true": 334,
-      "y_pred_top1": 84,
+      "y_pred_top1": 372,
       "correct": false
     },
     {
       "video_id": "B0798",
       "y_true": 358,
-      "y_pred_top1": 251,
+      "y_pred_top1": 355,
       "correct": false
     },
     {
       "video_id": "B0799",
       "y_true": 358,
-      "y_pred_top1": 251,
-      "correct": false
+      "y_pred_top1": 358,
+      "correct": true
     },
     {
       "video_id": "B0800",
       "y_true": 358,
-      "y_pred_top1": 292,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "B0801",
       "y_true": 358,
-      "y_pred_top1": 397,
-      "correct": false
+      "y_pred_top1": 358,
+      "correct": true
     },
     {
       "video_id": "B0805",
       "y_true": 356,
-      "y_pred_top1": 356,
-      "correct": true
+      "y_pred_top1": 355,
+      "correct": false
     },
     {
       "video_id": "B0806",
       "y_true": 356,
-      "y_pred_top1": 356,
-      "correct": true
+      "y_pred_top1": 251,
+      "correct": false
     },
     {
       "video_id": "B0810",
@@ -1150,14 +1150,14 @@
     {
       "video_id": "B0818",
       "y_true": 354,
-      "y_pred_top1": 43,
+      "y_pred_top1": 355,
       "correct": false
     },
     {
       "video_id": "B0819",
       "y_true": 354,
-      "y_pred_top1": 354,
-      "correct": true
+      "y_pred_top1": 355,
+      "correct": false
     },
     {
       "video_id": "B0820",
@@ -1168,91 +1168,91 @@
     {
       "video_id": "B0833",
       "y_true": 160,
-      "y_pred_top1": 160,
-      "correct": true
+      "y_pred_top1": 91,
+      "correct": false
     },
     {
       "video_id": "B0834",
       "y_true": 160,
-      "y_pred_top1": 160,
-      "correct": true
+      "y_pred_top1": 91,
+      "correct": false
     },
     {
       "video_id": "B0835",
       "y_true": 160,
-      "y_pred_top1": 160,
-      "correct": true
+      "y_pred_top1": 31,
+      "correct": false
     },
     {
       "video_id": "B0836",
       "y_true": 160,
-      "y_pred_top1": 160,
-      "correct": true
+      "y_pred_top1": 31,
+      "correct": false
     },
     {
       "video_id": "B0837",
       "y_true": 160,
-      "y_pred_top1": 160,
-      "correct": true
+      "y_pred_top1": 35,
+      "correct": false
     },
     {
       "video_id": "B0851",
       "y_true": 202,
-      "y_pred_top1": 219,
+      "y_pred_top1": 10,
       "correct": false
     },
     {
       "video_id": "B0852",
       "y_true": 202,
-      "y_pred_top1": 219,
+      "y_pred_top1": 355,
       "correct": false
     },
     {
       "video_id": "B0853",
       "y_true": 202,
-      "y_pred_top1": 15,
+      "y_pred_top1": 10,
       "correct": false
     },
     {
       "video_id": "B0854",
       "y_true": 202,
-      "y_pred_top1": 15,
+      "y_pred_top1": 323,
       "correct": false
     },
     {
       "video_id": "B0859",
       "y_true": 201,
-      "y_pred_top1": 201,
-      "correct": true
+      "y_pred_top1": 323,
+      "correct": false
     },
     {
       "video_id": "B0860",
       "y_true": 201,
-      "y_pred_top1": 266,
+      "y_pred_top1": 323,
       "correct": false
     },
     {
       "video_id": "B0861",
       "y_true": 201,
-      "y_pred_top1": 442,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "B0883",
       "y_true": 441,
-      "y_pred_top1": 437,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "B0884",
       "y_true": 441,
-      "y_pred_top1": 393,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "B0889",
       "y_true": 440,
-      "y_pred_top1": 350,
+      "y_pred_top1": 90,
       "correct": false
     },
     {
@@ -1264,13 +1264,13 @@
     {
       "video_id": "B0891",
       "y_true": 440,
-      "y_pred_top1": 350,
+      "y_pred_top1": 90,
       "correct": false
     },
     {
       "video_id": "B0928",
       "y_true": 428,
-      "y_pred_top1": 411,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
@@ -1294,97 +1294,97 @@
     {
       "video_id": "B0998",
       "y_true": 251,
-      "y_pred_top1": 251,
-      "correct": true
+      "y_pred_top1": 442,
+      "correct": false
     },
     {
       "video_id": "B0999",
       "y_true": 251,
-      "y_pred_top1": 251,
-      "correct": true
+      "y_pred_top1": 86,
+      "correct": false
     },
     {
       "video_id": "B1033",
       "y_true": 261,
-      "y_pred_top1": 132,
-      "correct": false
+      "y_pred_top1": 261,
+      "correct": true
     },
     {
       "video_id": "B1034",
       "y_true": 261,
-      "y_pred_top1": 132,
-      "correct": false
+      "y_pred_top1": 261,
+      "correct": true
     },
     {
       "video_id": "B1035",
       "y_true": 261,
-      "y_pred_top1": 132,
-      "correct": false
+      "y_pred_top1": 261,
+      "correct": true
     },
     {
       "video_id": "B1086",
       "y_true": 442,
-      "y_pred_top1": 442,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "B1087",
       "y_true": 442,
-      "y_pred_top1": 442,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "B1088",
       "y_true": 442,
-      "y_pred_top1": 442,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "B1093",
       "y_true": 420,
-      "y_pred_top1": 205,
-      "correct": false
+      "y_pred_top1": 420,
+      "correct": true
     },
     {
       "video_id": "B1094",
       "y_true": 420,
-      "y_pred_top1": 419,
+      "y_pred_top1": 369,
       "correct": false
     },
     {
       "video_id": "B1095",
       "y_true": 420,
-      "y_pred_top1": 419,
-      "correct": false
+      "y_pred_top1": 420,
+      "correct": true
     },
     {
       "video_id": "B1096",
       "y_true": 420,
-      "y_pred_top1": 202,
+      "y_pred_top1": 4,
       "correct": false
     },
     {
       "video_id": "B1107",
       "y_true": 123,
-      "y_pred_top1": 39,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "B1108",
       "y_true": 123,
-      "y_pred_top1": 39,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "B1109",
       "y_true": 123,
-      "y_pred_top1": 39,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "B1110",
       "y_true": 123,
-      "y_pred_top1": 39,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
@@ -1426,25 +1426,25 @@
     {
       "video_id": "D0525N",
       "y_true": 137,
-      "y_pred_top1": 208,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "D0526N",
       "y_true": 135,
-      "y_pred_top1": 427,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
       "video_id": "D0526T",
       "y_true": 135,
-      "y_pred_top1": 427,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
       "video_id": "D0531",
       "y_true": 1,
-      "y_pred_top1": 97,
+      "y_pred_top1": 377,
       "correct": false
     },
     {
@@ -1456,74 +1456,74 @@
     {
       "video_id": "D0541N",
       "y_true": 0,
-      "y_pred_top1": 208,
+      "y_pred_top1": 377,
       "correct": false
     },
     {
       "video_id": "D0541T",
       "y_true": 0,
-      "y_pred_top1": 208,
+      "y_pred_top1": 377,
       "correct": false
     },
     {
       "video_id": "VTV0012",
       "y_true": 135,
-      "y_pred_top1": 82,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV0020",
       "y_true": 203,
-      "y_pred_top1": 319,
+      "y_pred_top1": 329,
       "correct": false
     },
     {
       "video_id": "VTV0027",
       "y_true": 328,
-      "y_pred_top1": 128,
+      "y_pred_top1": 81,
       "correct": false
     },
     {
       "video_id": "VTV0028",
       "y_true": 328,
-      "y_pred_top1": 43,
+      "y_pred_top1": 239,
       "correct": false
     },
     {
       "video_id": "VTV0041",
       "y_true": 137,
-      "y_pred_top1": 319,
+      "y_pred_top1": 302,
       "correct": false
     },
     {
       "video_id": "VTV0044",
       "y_true": 394,
-      "y_pred_top1": 375,
+      "y_pred_top1": 415,
       "correct": false
     },
     {
       "video_id": "VTV0046",
       "y_true": 172,
-      "y_pred_top1": 337,
+      "y_pred_top1": 366,
       "correct": false
     },
     {
       "video_id": "VTV0050",
       "y_true": 270,
-      "y_pred_top1": 387,
+      "y_pred_top1": 205,
       "correct": false
     },
     {
       "video_id": "VTV0053",
       "y_true": 341,
-      "y_pred_top1": 114,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "VTV0056",
       "y_true": 111,
-      "y_pred_top1": 387,
-      "correct": false
+      "y_pred_top1": 111,
+      "correct": true
     },
     {
       "video_id": "VTV0068",
@@ -1546,50 +1546,50 @@
     {
       "video_id": "VTV0075",
       "y_true": 70,
-      "y_pred_top1": 84,
+      "y_pred_top1": 329,
       "correct": false
     },
     {
       "video_id": "VTV0076",
       "y_true": 70,
-      "y_pred_top1": 84,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0081",
       "y_true": 444,
-      "y_pred_top1": 319,
+      "y_pred_top1": 77,
       "correct": false
     },
     {
       "video_id": "VTV0090",
       "y_true": 384,
-      "y_pred_top1": 91,
+      "y_pred_top1": 83,
       "correct": false
     },
     {
       "video_id": "VTV0099",
       "y_true": 350,
-      "y_pred_top1": 84,
+      "y_pred_top1": 83,
       "correct": false
     },
     {
       "video_id": "VTV0105",
       "y_true": 195,
-      "y_pred_top1": 319,
+      "y_pred_top1": 246,
       "correct": false
     },
     {
       "video_id": "VTV0108",
       "y_true": 260,
-      "y_pred_top1": 128,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "VTV0119",
       "y_true": 410,
-      "y_pred_top1": 410,
-      "correct": true
+      "y_pred_top1": 335,
+      "correct": false
     },
     {
       "video_id": "VTV0120",
@@ -1600,8 +1600,8 @@
     {
       "video_id": "VTV0125",
       "y_true": 141,
-      "y_pred_top1": 141,
-      "correct": true
+      "y_pred_top1": 340,
+      "correct": false
     },
     {
       "video_id": "VTV0126",
@@ -1612,14 +1612,14 @@
     {
       "video_id": "VTV0130",
       "y_true": 410,
-      "y_pred_top1": 410,
-      "correct": true
+      "y_pred_top1": 335,
+      "correct": false
     },
     {
       "video_id": "VTV0131",
       "y_true": 410,
-      "y_pred_top1": 410,
-      "correct": true
+      "y_pred_top1": 335,
+      "correct": false
     },
     {
       "video_id": "VTV0149",
@@ -1630,8 +1630,8 @@
     {
       "video_id": "VTV0151",
       "y_true": 54,
-      "y_pred_top1": 54,
-      "correct": true
+      "y_pred_top1": 55,
+      "correct": false
     },
     {
       "video_id": "VTV0160",
@@ -1648,8 +1648,8 @@
     {
       "video_id": "VTV0181",
       "y_true": 41,
-      "y_pred_top1": 41,
-      "correct": true
+      "y_pred_top1": 114,
+      "correct": false
     },
     {
       "video_id": "VTV0182",
@@ -1660,25 +1660,25 @@
     {
       "video_id": "VTV0198",
       "y_true": 332,
-      "y_pred_top1": 151,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV0200",
       "y_true": 332,
-      "y_pred_top1": 151,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV0201",
       "y_true": 52,
-      "y_pred_top1": 151,
+      "y_pred_top1": 295,
       "correct": false
     },
     {
       "video_id": "VTV0209",
       "y_true": 222,
-      "y_pred_top1": 387,
+      "y_pred_top1": 204,
       "correct": false
     },
     {
@@ -1690,7 +1690,7 @@
     {
       "video_id": "VTV0218",
       "y_true": 204,
-      "y_pred_top1": 205,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
@@ -1702,43 +1702,43 @@
     {
       "video_id": "VTV0227",
       "y_true": 329,
-      "y_pred_top1": 418,
+      "y_pred_top1": 291,
       "correct": false
     },
     {
       "video_id": "VTV0240",
       "y_true": 25,
-      "y_pred_top1": 5,
+      "y_pred_top1": 381,
       "correct": false
     },
     {
       "video_id": "VTV0241",
       "y_true": 25,
-      "y_pred_top1": 231,
+      "y_pred_top1": 332,
       "correct": false
     },
     {
       "video_id": "VTV0242",
       "y_true": 247,
-      "y_pred_top1": 303,
+      "y_pred_top1": 52,
       "correct": false
     },
     {
       "video_id": "VTV0243",
       "y_true": 247,
-      "y_pred_top1": 303,
+      "y_pred_top1": 52,
       "correct": false
     },
     {
       "video_id": "VTV0244",
       "y_true": 443,
-      "y_pred_top1": 303,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV0246",
       "y_true": 415,
-      "y_pred_top1": 5,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
@@ -1756,37 +1756,37 @@
     {
       "video_id": "VTV0255",
       "y_true": 345,
-      "y_pred_top1": 112,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "VTV0278",
       "y_true": 317,
-      "y_pred_top1": 90,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "VTV0279",
       "y_true": 317,
-      "y_pred_top1": 90,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "VTV0283",
       "y_true": 304,
-      "y_pred_top1": 146,
-      "correct": false
+      "y_pred_top1": 304,
+      "correct": true
     },
     {
       "video_id": "VTV0286",
       "y_true": 66,
-      "y_pred_top1": 407,
+      "y_pred_top1": 428,
       "correct": false
     },
     {
       "video_id": "VTV0289",
       "y_true": 157,
-      "y_pred_top1": 219,
+      "y_pred_top1": 338,
       "correct": false
     },
     {
@@ -1810,7 +1810,7 @@
     {
       "video_id": "VTV0306",
       "y_true": 400,
-      "y_pred_top1": 90,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
@@ -1822,13 +1822,13 @@
     {
       "video_id": "VTV0314",
       "y_true": 181,
-      "y_pred_top1": 42,
+      "y_pred_top1": 198,
       "correct": false
     },
     {
       "video_id": "VTV0315",
       "y_true": 181,
-      "y_pred_top1": 42,
+      "y_pred_top1": 198,
       "correct": false
     },
     {
@@ -1846,13 +1846,13 @@
     {
       "video_id": "VTV0335",
       "y_true": 258,
-      "y_pred_top1": 357,
+      "y_pred_top1": 91,
       "correct": false
     },
     {
       "video_id": "VTV0340",
       "y_true": 130,
-      "y_pred_top1": 350,
+      "y_pred_top1": 131,
       "correct": false
     },
     {
@@ -1864,14 +1864,14 @@
     {
       "video_id": "VTV0349",
       "y_true": 125,
-      "y_pred_top1": 242,
+      "y_pred_top1": 375,
       "correct": false
     },
     {
       "video_id": "VTV0362",
       "y_true": 284,
-      "y_pred_top1": 210,
-      "correct": false
+      "y_pred_top1": 284,
+      "correct": true
     },
     {
       "video_id": "VTV0373",
@@ -1882,37 +1882,37 @@
     {
       "video_id": "VTV0376",
       "y_true": 340,
-      "y_pred_top1": 303,
+      "y_pred_top1": 309,
       "correct": false
     },
     {
       "video_id": "VTV0378",
       "y_true": 126,
-      "y_pred_top1": 153,
+      "y_pred_top1": 151,
       "correct": false
     },
     {
       "video_id": "VTV0381",
       "y_true": 30,
-      "y_pred_top1": 428,
+      "y_pred_top1": 407,
       "correct": false
     },
     {
       "video_id": "VTV0382",
       "y_true": 30,
-      "y_pred_top1": 428,
-      "correct": false
+      "y_pred_top1": 30,
+      "correct": true
     },
     {
       "video_id": "VTV0385",
       "y_true": 32,
-      "y_pred_top1": 65,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV0386",
       "y_true": 32,
-      "y_pred_top1": 65,
+      "y_pred_top1": 199,
       "correct": false
     },
     {
@@ -1924,97 +1924,97 @@
     {
       "video_id": "VTV0390",
       "y_true": 31,
-      "y_pred_top1": 387,
+      "y_pred_top1": 407,
       "correct": false
     },
     {
       "video_id": "VTV0419",
       "y_true": 256,
-      "y_pred_top1": 210,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
       "video_id": "VTV0423",
       "y_true": 434,
-      "y_pred_top1": 38,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV0424",
       "y_true": 434,
-      "y_pred_top1": 150,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV0425",
       "y_true": 434,
-      "y_pred_top1": 146,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV0428",
       "y_true": 380,
-      "y_pred_top1": 281,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV0432",
       "y_true": 385,
-      "y_pred_top1": 419,
+      "y_pred_top1": 295,
       "correct": false
     },
     {
       "video_id": "VTV0433",
       "y_true": 385,
-      "y_pred_top1": 132,
+      "y_pred_top1": 380,
       "correct": false
     },
     {
       "video_id": "VTV0434",
       "y_true": 385,
-      "y_pred_top1": 242,
+      "y_pred_top1": 102,
       "correct": false
     },
     {
       "video_id": "VTV0436",
       "y_true": 369,
-      "y_pred_top1": 132,
+      "y_pred_top1": 102,
       "correct": false
     },
     {
       "video_id": "VTV0451",
       "y_true": 14,
-      "y_pred_top1": 65,
+      "y_pred_top1": 131,
       "correct": false
     },
     {
       "video_id": "VTV0455",
       "y_true": 428,
-      "y_pred_top1": 5,
+      "y_pred_top1": 402,
       "correct": false
     },
     {
       "video_id": "VTV0456",
       "y_true": 428,
-      "y_pred_top1": 144,
+      "y_pred_top1": 184,
       "correct": false
     },
     {
       "video_id": "VTV0458",
       "y_true": 305,
-      "y_pred_top1": 205,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
       "video_id": "VTV0459",
       "y_true": 305,
-      "y_pred_top1": 210,
+      "y_pred_top1": 102,
       "correct": false
     },
     {
       "video_id": "VTV0463",
       "y_true": 417,
-      "y_pred_top1": 144,
+      "y_pred_top1": 407,
       "correct": false
     },
     {
@@ -2032,8 +2032,8 @@
     {
       "video_id": "VTV0479",
       "y_true": 357,
-      "y_pred_top1": 357,
-      "correct": true
+      "y_pred_top1": 219,
+      "correct": false
     },
     {
       "video_id": "VTV0483",
@@ -2050,13 +2050,13 @@
     {
       "video_id": "VTV0490",
       "y_true": 314,
-      "y_pred_top1": 357,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
       "video_id": "VTV0491",
       "y_true": 314,
-      "y_pred_top1": 357,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
@@ -2068,91 +2068,91 @@
     {
       "video_id": "VTV0498",
       "y_true": 423,
-      "y_pred_top1": 373,
+      "y_pred_top1": 84,
       "correct": false
     },
     {
       "video_id": "VTV0499",
       "y_true": 423,
-      "y_pred_top1": 373,
+      "y_pred_top1": 84,
       "correct": false
     },
     {
       "video_id": "VTV0504",
       "y_true": 250,
-      "y_pred_top1": 20,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0513",
       "y_true": 200,
-      "y_pred_top1": 112,
+      "y_pred_top1": 40,
       "correct": false
     },
     {
       "video_id": "VTV0514",
       "y_true": 200,
-      "y_pred_top1": 240,
+      "y_pred_top1": 15,
       "correct": false
     },
     {
       "video_id": "VTV0518",
       "y_true": 34,
-      "y_pred_top1": 393,
+      "y_pred_top1": 211,
       "correct": false
     },
     {
       "video_id": "VTV0519",
       "y_true": 34,
-      "y_pred_top1": 44,
+      "y_pred_top1": 211,
       "correct": false
     },
     {
       "video_id": "VTV0528",
       "y_true": 144,
-      "y_pred_top1": 144,
-      "correct": true
+      "y_pred_top1": 407,
+      "correct": false
     },
     {
       "video_id": "VTV0529",
       "y_true": 144,
-      "y_pred_top1": 144,
-      "correct": true
+      "y_pred_top1": 407,
+      "correct": false
     },
     {
       "video_id": "VTV0536",
       "y_true": 183,
-      "y_pred_top1": 201,
-      "correct": false
+      "y_pred_top1": 183,
+      "correct": true
     },
     {
       "video_id": "VTV0537",
       "y_true": 183,
-      "y_pred_top1": 204,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV0538",
       "y_true": 183,
-      "y_pred_top1": 204,
+      "y_pred_top1": 281,
       "correct": false
     },
     {
       "video_id": "VTV0543",
       "y_true": 409,
-      "y_pred_top1": 44,
+      "y_pred_top1": 124,
       "correct": false
     },
     {
       "video_id": "VTV0544",
       "y_true": 409,
-      "y_pred_top1": 44,
+      "y_pred_top1": 193,
       "correct": false
     },
     {
       "video_id": "VTV0551",
       "y_true": 58,
-      "y_pred_top1": 15,
+      "y_pred_top1": 112,
       "correct": false
     },
     {
@@ -2164,121 +2164,121 @@
     {
       "video_id": "VTV0560",
       "y_true": 173,
-      "y_pred_top1": 132,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "VTV0561",
       "y_true": 173,
-      "y_pred_top1": 87,
+      "y_pred_top1": 411,
       "correct": false
     },
     {
       "video_id": "VTV0562",
       "y_true": 173,
-      "y_pred_top1": 173,
-      "correct": true
+      "y_pred_top1": 411,
+      "correct": false
     },
     {
       "video_id": "VTV0565",
       "y_true": 361,
-      "y_pred_top1": 373,
+      "y_pred_top1": 388,
       "correct": false
     },
     {
       "video_id": "VTV0566",
       "y_true": 361,
-      "y_pred_top1": 373,
+      "y_pred_top1": 388,
       "correct": false
     },
     {
       "video_id": "VTV0572",
       "y_true": 374,
-      "y_pred_top1": 43,
+      "y_pred_top1": 191,
       "correct": false
     },
     {
       "video_id": "VTV0573",
       "y_true": 374,
-      "y_pred_top1": 43,
+      "y_pred_top1": 191,
       "correct": false
     },
     {
       "video_id": "VTV0578",
       "y_true": 349,
-      "y_pred_top1": 18,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
       "video_id": "VTV0579",
       "y_true": 349,
-      "y_pred_top1": 378,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
       "video_id": "VTV0580",
       "y_true": 349,
-      "y_pred_top1": 419,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
       "video_id": "VTV0586",
       "y_true": 184,
-      "y_pred_top1": 378,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "VTV0587",
       "y_true": 184,
-      "y_pred_top1": 445,
+      "y_pred_top1": 3,
       "correct": false
     },
     {
       "video_id": "VTV0594",
       "y_true": 60,
-      "y_pred_top1": 406,
+      "y_pred_top1": 33,
       "correct": false
     },
     {
       "video_id": "VTV0595",
       "y_true": 60,
-      "y_pred_top1": 213,
+      "y_pred_top1": 78,
       "correct": false
     },
     {
       "video_id": "VTV0601",
       "y_true": 338,
-      "y_pred_top1": 159,
+      "y_pred_top1": 353,
       "correct": false
     },
     {
       "video_id": "VTV0604",
       "y_true": 159,
-      "y_pred_top1": 240,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0605",
       "y_true": 159,
-      "y_pred_top1": 144,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0606",
       "y_true": 159,
-      "y_pred_top1": 240,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0610",
       "y_true": 180,
-      "y_pred_top1": 267,
+      "y_pred_top1": 15,
       "correct": false
     },
     {
       "video_id": "VTV0611",
       "y_true": 180,
-      "y_pred_top1": 436,
+      "y_pred_top1": 184,
       "correct": false
     },
     {
@@ -2296,13 +2296,13 @@
     {
       "video_id": "VTV0619",
       "y_true": 159,
-      "y_pred_top1": 144,
+      "y_pred_top1": 353,
       "correct": false
     },
     {
       "video_id": "VTV0621",
       "y_true": 180,
-      "y_pred_top1": 240,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
@@ -2314,19 +2314,19 @@
     {
       "video_id": "VTV0640",
       "y_true": 280,
-      "y_pred_top1": 136,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
       "video_id": "VTV0641",
       "y_true": 280,
-      "y_pred_top1": 150,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
       "video_id": "VTV0681",
       "y_true": 168,
-      "y_pred_top1": 177,
+      "y_pred_top1": 305,
       "correct": false
     },
     {
@@ -2344,13 +2344,13 @@
     {
       "video_id": "VTV0691",
       "y_true": 371,
-      "y_pred_top1": 79,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV0701",
       "y_true": 428,
-      "y_pred_top1": 378,
+      "y_pred_top1": 92,
       "correct": false
     },
     {
@@ -2368,19 +2368,19 @@
     {
       "video_id": "VTV0724",
       "y_true": 36,
-      "y_pred_top1": 436,
+      "y_pred_top1": 20,
       "correct": false
     },
     {
       "video_id": "VTV0725",
       "y_true": 36,
-      "y_pred_top1": 436,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV0734",
       "y_true": 64,
-      "y_pred_top1": 435,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
@@ -2398,7 +2398,7 @@
     {
       "video_id": "VTV0738",
       "y_true": 352,
-      "y_pred_top1": 65,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
@@ -2410,7 +2410,7 @@
     {
       "video_id": "VTV0753",
       "y_true": 164,
-      "y_pred_top1": 177,
+      "y_pred_top1": 226,
       "correct": false
     },
     {
@@ -2422,37 +2422,37 @@
     {
       "video_id": "VTV0756",
       "y_true": 165,
-      "y_pred_top1": 175,
+      "y_pred_top1": 229,
       "correct": false
     },
     {
       "video_id": "VTV0757",
       "y_true": 165,
-      "y_pred_top1": 128,
-      "correct": false
+      "y_pred_top1": 165,
+      "correct": true
     },
     {
       "video_id": "VTV0758",
       "y_true": 165,
-      "y_pred_top1": 175,
-      "correct": false
+      "y_pred_top1": 165,
+      "correct": true
     },
     {
       "video_id": "VTV0759",
       "y_true": 165,
-      "y_pred_top1": 311,
-      "correct": false
+      "y_pred_top1": 165,
+      "correct": true
     },
     {
       "video_id": "VTV0767",
       "y_true": 383,
-      "y_pred_top1": 229,
+      "y_pred_top1": 304,
       "correct": false
     },
     {
       "video_id": "VTV0768",
       "y_true": 383,
-      "y_pred_top1": 326,
+      "y_pred_top1": 304,
       "correct": false
     },
     {
@@ -2464,49 +2464,49 @@
     {
       "video_id": "VTV0784",
       "y_true": 353,
-      "y_pred_top1": 112,
+      "y_pred_top1": 40,
       "correct": false
     },
     {
       "video_id": "VTV0785",
       "y_true": 353,
-      "y_pred_top1": 84,
-      "correct": false
+      "y_pred_top1": 353,
+      "correct": true
     },
     {
       "video_id": "VTV0791",
       "y_true": 307,
-      "y_pred_top1": 28,
+      "y_pred_top1": 159,
       "correct": false
     },
     {
       "video_id": "VTV0792",
       "y_true": 307,
-      "y_pred_top1": 353,
+      "y_pred_top1": 372,
       "correct": false
     },
     {
       "video_id": "VTV0793",
       "y_true": 307,
-      "y_pred_top1": 28,
+      "y_pred_top1": 386,
       "correct": false
     },
     {
       "video_id": "VTV0794",
       "y_true": 307,
-      "y_pred_top1": 28,
+      "y_pred_top1": 386,
       "correct": false
     },
     {
       "video_id": "VTV0800",
       "y_true": 351,
-      "y_pred_top1": 141,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
       "video_id": "VTV0805",
       "y_true": 133,
-      "y_pred_top1": 154,
+      "y_pred_top1": 303,
       "correct": false
     },
     {
@@ -2518,55 +2518,55 @@
     {
       "video_id": "VTV0813",
       "y_true": 233,
-      "y_pred_top1": 369,
+      "y_pred_top1": 437,
       "correct": false
     },
     {
       "video_id": "VTV0814",
       "y_true": 233,
-      "y_pred_top1": 253,
+      "y_pred_top1": 437,
       "correct": false
     },
     {
       "video_id": "VTV0840",
       "y_true": 428,
-      "y_pred_top1": 411,
+      "y_pred_top1": 92,
       "correct": false
     },
     {
       "video_id": "VTV0841",
       "y_true": 260,
-      "y_pred_top1": 395,
+      "y_pred_top1": 150,
       "correct": false
     },
     {
       "video_id": "VTV0842",
       "y_true": 260,
-      "y_pred_top1": 395,
+      "y_pred_top1": 150,
       "correct": false
     },
     {
       "video_id": "VTV0849",
       "y_true": 73,
-      "y_pred_top1": 303,
+      "y_pred_top1": 150,
       "correct": false
     },
     {
       "video_id": "VTV0853",
       "y_true": 365,
-      "y_pred_top1": 151,
+      "y_pred_top1": 393,
       "correct": false
     },
     {
       "video_id": "VTV0858",
       "y_true": 337,
-      "y_pred_top1": 177,
+      "y_pred_top1": 168,
       "correct": false
     },
     {
       "video_id": "VTV0859",
       "y_true": 260,
-      "y_pred_top1": 150,
+      "y_pred_top1": 168,
       "correct": false
     },
     {
@@ -2578,121 +2578,121 @@
     {
       "video_id": "VTV0887",
       "y_true": 232,
-      "y_pred_top1": 395,
+      "y_pred_top1": 15,
       "correct": false
     },
     {
       "video_id": "VTV0893",
       "y_true": 122,
-      "y_pred_top1": 122,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "VTV0894",
       "y_true": 122,
-      "y_pred_top1": 362,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "VTV0899",
       "y_true": 333,
-      "y_pred_top1": 205,
+      "y_pred_top1": 13,
       "correct": false
     },
     {
       "video_id": "VTV0900",
       "y_true": 333,
-      "y_pred_top1": 355,
+      "y_pred_top1": 90,
       "correct": false
     },
     {
       "video_id": "VTV0951",
       "y_true": 275,
-      "y_pred_top1": 275,
-      "correct": true
+      "y_pred_top1": 419,
+      "correct": false
     },
     {
       "video_id": "VTV0952",
       "y_true": 275,
-      "y_pred_top1": 275,
-      "correct": true
+      "y_pred_top1": 128,
+      "correct": false
     },
     {
       "video_id": "VTV0957",
       "y_true": 276,
-      "y_pred_top1": 248,
+      "y_pred_top1": 93,
       "correct": false
     },
     {
       "video_id": "VTV0962",
       "y_true": 274,
-      "y_pred_top1": 128,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV0977",
       "y_true": 127,
-      "y_pred_top1": 128,
+      "y_pred_top1": 408,
       "correct": false
     },
     {
       "video_id": "VTV0979",
       "y_true": 128,
-      "y_pred_top1": 128,
-      "correct": true
+      "y_pred_top1": 89,
+      "correct": false
     },
     {
       "video_id": "VTV0980",
       "y_true": 128,
-      "y_pred_top1": 175,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "VTV0987",
       "y_true": 229,
-      "y_pred_top1": 213,
+      "y_pred_top1": 383,
       "correct": false
     },
     {
       "video_id": "VTV0988",
       "y_true": 229,
-      "y_pred_top1": 353,
+      "y_pred_top1": 304,
       "correct": false
     },
     {
       "video_id": "VTV0989",
       "y_true": 229,
-      "y_pred_top1": 353,
+      "y_pred_top1": 383,
       "correct": false
     },
     {
       "video_id": "VTV1027",
       "y_true": 206,
-      "y_pred_top1": 311,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "VTV1028",
       "y_true": 206,
-      "y_pred_top1": 80,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "VTV1029",
       "y_true": 206,
-      "y_pred_top1": 6,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "VTV1035",
       "y_true": 433,
-      "y_pred_top1": 185,
+      "y_pred_top1": 145,
       "correct": false
     },
     {
       "video_id": "VTV1036",
       "y_true": 433,
-      "y_pred_top1": 185,
+      "y_pred_top1": 247,
       "correct": false
     },
     {
@@ -2704,13 +2704,13 @@
     {
       "video_id": "VTV1049",
       "y_true": 375,
-      "y_pred_top1": 375,
-      "correct": true
+      "y_pred_top1": 44,
+      "correct": false
     },
     {
       "video_id": "VTV1054",
       "y_true": 346,
-      "y_pred_top1": 34,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
@@ -2740,38 +2740,38 @@
     {
       "video_id": "VTV1072",
       "y_true": 285,
-      "y_pred_top1": 285,
-      "correct": true
+      "y_pred_top1": 110,
+      "correct": false
     },
     {
       "video_id": "VTV1077",
       "y_true": 426,
-      "y_pred_top1": 390,
+      "y_pred_top1": 364,
       "correct": false
     },
     {
       "video_id": "VTV1078",
       "y_true": 426,
-      "y_pred_top1": 267,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "VTV1115",
       "y_true": 80,
-      "y_pred_top1": 281,
+      "y_pred_top1": 433,
       "correct": false
     },
     {
       "video_id": "VTV1116",
       "y_true": 80,
-      "y_pred_top1": 281,
-      "correct": false
+      "y_pred_top1": 80,
+      "correct": true
     },
     {
       "video_id": "VTV1139",
       "y_true": 82,
-      "y_pred_top1": 82,
-      "correct": true
+      "y_pred_top1": 331,
+      "correct": false
     },
     {
       "video_id": "VTV1153",
@@ -2794,8 +2794,8 @@
     {
       "video_id": "VTV1161",
       "y_true": 96,
-      "y_pred_top1": 96,
-      "correct": true
+      "y_pred_top1": 84,
+      "correct": false
     },
     {
       "video_id": "VTV1200",
@@ -2818,31 +2818,31 @@
     {
       "video_id": "VTV1205",
       "y_true": 151,
-      "y_pred_top1": 303,
-      "correct": false
+      "y_pred_top1": 151,
+      "correct": true
     },
     {
       "video_id": "VTV1206",
       "y_true": 151,
-      "y_pred_top1": 154,
-      "correct": false
+      "y_pred_top1": 151,
+      "correct": true
     },
     {
       "video_id": "VTV1218",
       "y_true": 72,
-      "y_pred_top1": 72,
-      "correct": true
+      "y_pred_top1": 303,
+      "correct": false
     },
     {
       "video_id": "VTV1228",
       "y_true": 169,
-      "y_pred_top1": 169,
-      "correct": true
+      "y_pred_top1": 298,
+      "correct": false
     },
     {
       "video_id": "VTV1229",
       "y_true": 169,
-      "y_pred_top1": 188,
+      "y_pred_top1": 154,
       "correct": false
     },
     {
@@ -2860,7 +2860,7 @@
     {
       "video_id": "VTV1302",
       "y_true": 89,
-      "y_pred_top1": 387,
+      "y_pred_top1": 113,
       "correct": false
     },
     {
@@ -2872,7 +2872,7 @@
     {
       "video_id": "VTV1304",
       "y_true": 82,
-      "y_pred_top1": 303,
+      "y_pred_top1": 92,
       "correct": false
     },
     {
@@ -2884,13 +2884,13 @@
     {
       "video_id": "VTV1322",
       "y_true": 151,
-      "y_pred_top1": 188,
+      "y_pred_top1": 303,
       "correct": false
     },
     {
       "video_id": "VTV1323",
       "y_true": 278,
-      "y_pred_top1": 144,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
@@ -2914,26 +2914,26 @@
     {
       "video_id": "VTV1348",
       "y_true": 114,
-      "y_pred_top1": 114,
-      "correct": true
+      "y_pred_top1": 41,
+      "correct": false
     },
     {
       "video_id": "VTV1351",
       "y_true": 282,
-      "y_pred_top1": 303,
-      "correct": false
+      "y_pred_top1": 282,
+      "correct": true
     },
     {
       "video_id": "VTV1358",
       "y_true": 230,
-      "y_pred_top1": 82,
+      "y_pred_top1": 102,
       "correct": false
     },
     {
       "video_id": "VTV1359",
       "y_true": 230,
-      "y_pred_top1": 230,
-      "correct": true
+      "y_pred_top1": 420,
+      "correct": false
     },
     {
       "video_id": "VTV1360",
@@ -2944,13 +2944,13 @@
     {
       "video_id": "VTV1363",
       "y_true": 398,
-      "y_pred_top1": 99,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV1372",
       "y_true": 47,
-      "y_pred_top1": 230,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
@@ -2974,38 +2974,38 @@
     {
       "video_id": "VTV1386",
       "y_true": 97,
-      "y_pred_top1": 123,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
       "video_id": "VTV1387",
       "y_true": 97,
-      "y_pred_top1": 191,
+      "y_pred_top1": 407,
       "correct": false
     },
     {
       "video_id": "VTV1392",
       "y_true": 264,
-      "y_pred_top1": 99,
+      "y_pred_top1": 420,
       "correct": false
     },
     {
       "video_id": "VTV1393",
       "y_true": 264,
-      "y_pred_top1": 210,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV1397",
       "y_true": 325,
-      "y_pred_top1": 114,
+      "y_pred_top1": 204,
       "correct": false
     },
     {
       "video_id": "VTV1423",
       "y_true": 287,
-      "y_pred_top1": 378,
-      "correct": false
+      "y_pred_top1": 287,
+      "correct": true
     },
     {
       "video_id": "VTV1428",
@@ -3022,25 +3022,25 @@
     {
       "video_id": "VTV1432",
       "y_true": 291,
-      "y_pred_top1": 411,
+      "y_pred_top1": 185,
       "correct": false
     },
     {
       "video_id": "VTV1435",
       "y_true": 132,
-      "y_pred_top1": 411,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV1436",
       "y_true": 132,
-      "y_pred_top1": 411,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV1453",
       "y_true": 294,
-      "y_pred_top1": 188,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
@@ -3052,13 +3052,13 @@
     {
       "video_id": "VTV1467",
       "y_true": 295,
-      "y_pred_top1": 292,
+      "y_pred_top1": 411,
       "correct": false
     },
     {
       "video_id": "VTV1468",
       "y_true": 295,
-      "y_pred_top1": 292,
+      "y_pred_top1": 411,
       "correct": false
     },
     {
@@ -3076,115 +3076,115 @@
     {
       "video_id": "VTV1479",
       "y_true": 289,
-      "y_pred_top1": 55,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1480",
       "y_true": 289,
-      "y_pred_top1": 55,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1492",
       "y_true": 301,
-      "y_pred_top1": 131,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1497",
       "y_true": 300,
-      "y_pred_top1": 175,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1498",
       "y_true": 300,
-      "y_pred_top1": 175,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1502",
       "y_true": 299,
-      "y_pred_top1": 175,
+      "y_pred_top1": 149,
       "correct": false
     },
     {
       "video_id": "VTV1503",
       "y_true": 299,
-      "y_pred_top1": 175,
+      "y_pred_top1": 149,
       "correct": false
     },
     {
       "video_id": "VTV1508",
       "y_true": 37,
-      "y_pred_top1": 175,
+      "y_pred_top1": 149,
       "correct": false
     },
     {
       "video_id": "VTV1509",
       "y_true": 37,
-      "y_pred_top1": 175,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1539",
       "y_true": 102,
-      "y_pred_top1": 411,
+      "y_pred_top1": 439,
       "correct": false
     },
     {
       "video_id": "VTV1544",
       "y_true": 178,
-      "y_pred_top1": 259,
+      "y_pred_top1": 382,
       "correct": false
     },
     {
       "video_id": "VTV1548",
       "y_true": 23,
-      "y_pred_top1": 303,
+      "y_pred_top1": 113,
       "correct": false
     },
     {
       "video_id": "VTV1549",
       "y_true": 23,
-      "y_pred_top1": 265,
+      "y_pred_top1": 113,
       "correct": false
     },
     {
       "video_id": "VTV1550",
       "y_true": 23,
-      "y_pred_top1": 303,
+      "y_pred_top1": 113,
       "correct": false
     },
     {
       "video_id": "VTV1551",
       "y_true": 23,
-      "y_pred_top1": 128,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1556",
       "y_true": 24,
-      "y_pred_top1": 432,
+      "y_pred_top1": 205,
       "correct": false
     },
     {
       "video_id": "VTV1557",
       "y_true": 24,
-      "y_pred_top1": 173,
+      "y_pred_top1": 205,
       "correct": false
     },
     {
       "video_id": "VTV1561",
       "y_true": 100,
-      "y_pred_top1": 102,
+      "y_pred_top1": 173,
       "correct": false
     },
     {
       "video_id": "VTV1562",
       "y_true": 100,
-      "y_pred_top1": 180,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
@@ -3196,20 +3196,20 @@
     {
       "video_id": "VTV1598",
       "y_true": 108,
-      "y_pred_top1": 205,
+      "y_pred_top1": 239,
       "correct": false
     },
     {
       "video_id": "VTV1599",
       "y_true": 108,
-      "y_pred_top1": 432,
+      "y_pred_top1": 20,
       "correct": false
     },
     {
       "video_id": "VTV1604",
       "y_true": 429,
-      "y_pred_top1": 188,
-      "correct": false
+      "y_pred_top1": 429,
+      "correct": true
     },
     {
       "video_id": "VTV1621",
@@ -3220,7 +3220,7 @@
     {
       "video_id": "VTV1626",
       "y_true": 39,
-      "y_pred_top1": 188,
+      "y_pred_top1": 123,
       "correct": false
     },
     {
@@ -3232,115 +3232,115 @@
     {
       "video_id": "VTV1631",
       "y_true": 269,
-      "y_pred_top1": 382,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "VTV1636",
       "y_true": 67,
-      "y_pred_top1": 5,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
       "video_id": "VTV1785",
       "y_true": 161,
-      "y_pred_top1": 353,
+      "y_pred_top1": 298,
       "correct": false
     },
     {
       "video_id": "VTV1786",
       "y_true": 161,
-      "y_pred_top1": 368,
+      "y_pred_top1": 41,
       "correct": false
     },
     {
       "video_id": "VTV1787",
       "y_true": 161,
-      "y_pred_top1": 298,
+      "y_pred_top1": 41,
       "correct": false
     },
     {
       "video_id": "VTV1791",
       "y_true": 323,
-      "y_pred_top1": 65,
+      "y_pred_top1": 157,
       "correct": false
     },
     {
       "video_id": "VTV1796",
       "y_true": 116,
-      "y_pred_top1": 204,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
       "video_id": "VTV1797",
       "y_true": 116,
-      "y_pred_top1": 204,
+      "y_pred_top1": 86,
       "correct": false
     },
     {
       "video_id": "VTV1798",
       "y_true": 116,
-      "y_pred_top1": 204,
+      "y_pred_top1": 86,
       "correct": false
     },
     {
       "video_id": "VTV1803",
       "y_true": 40,
-      "y_pred_top1": 404,
+      "y_pred_top1": 219,
       "correct": false
     },
     {
       "video_id": "VTV1804",
       "y_true": 40,
-      "y_pred_top1": 323,
+      "y_pred_top1": 159,
       "correct": false
     },
     {
       "video_id": "VTV1824",
       "y_true": 399,
-      "y_pred_top1": 5,
+      "y_pred_top1": 357,
       "correct": false
     },
     {
       "video_id": "VTV1825",
       "y_true": 399,
-      "y_pred_top1": 5,
+      "y_pred_top1": 357,
       "correct": false
     },
     {
       "video_id": "VTV1835",
       "y_true": 324,
-      "y_pred_top1": 387,
+      "y_pred_top1": 357,
       "correct": false
     },
     {
       "video_id": "VTV1836",
       "y_true": 324,
-      "y_pred_top1": 259,
+      "y_pred_top1": 357,
       "correct": false
     },
     {
       "video_id": "VTV1863",
       "y_true": 360,
-      "y_pred_top1": 15,
-      "correct": false
+      "y_pred_top1": 360,
+      "correct": true
     },
     {
       "video_id": "VTV1867",
       "y_true": 389,
-      "y_pred_top1": 310,
+      "y_pred_top1": 356,
       "correct": false
     },
     {
       "video_id": "VTV1868",
       "y_true": 389,
-      "y_pred_top1": 310,
+      "y_pred_top1": 406,
       "correct": false
     },
     {
       "video_id": "VTV1872",
       "y_true": 335,
-      "y_pred_top1": 177,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
@@ -3352,133 +3352,133 @@
     {
       "video_id": "VTV1889",
       "y_true": 15,
-      "y_pred_top1": 378,
-      "correct": false
+      "y_pred_top1": 15,
+      "correct": true
     },
     {
       "video_id": "VTV1922",
       "y_true": 179,
-      "y_pred_top1": 230,
+      "y_pred_top1": 369,
       "correct": false
     },
     {
       "video_id": "VTV1923",
       "y_true": 179,
-      "y_pred_top1": 378,
+      "y_pred_top1": 369,
       "correct": false
     },
     {
       "video_id": "VTV1924",
       "y_true": 179,
-      "y_pred_top1": 369,
+      "y_pred_top1": 87,
       "correct": false
     },
     {
       "video_id": "VTV1927",
       "y_true": 74,
-      "y_pred_top1": 131,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV1928",
       "y_true": 74,
-      "y_pred_top1": 378,
+      "y_pred_top1": 131,
       "correct": false
     },
     {
       "video_id": "VTV1933",
       "y_true": 347,
-      "y_pred_top1": 9,
+      "y_pred_top1": 294,
       "correct": false
     },
     {
       "video_id": "VTV1934",
       "y_true": 347,
-      "y_pred_top1": 377,
+      "y_pred_top1": 298,
       "correct": false
     },
     {
       "video_id": "VTV1945",
       "y_true": 192,
-      "y_pred_top1": 154,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV1946",
       "y_true": 192,
-      "y_pred_top1": 154,
+      "y_pred_top1": 69,
       "correct": false
     },
     {
       "video_id": "VTV1951",
       "y_true": 320,
-      "y_pred_top1": 436,
+      "y_pred_top1": 90,
       "correct": false
     },
     {
       "video_id": "VTV1959",
       "y_true": 234,
-      "y_pred_top1": 148,
+      "y_pred_top1": 279,
       "correct": false
     },
     {
       "video_id": "VTV1963",
       "y_true": 3,
-      "y_pred_top1": 429,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "VTV1964",
       "y_true": 3,
-      "y_pred_top1": 185,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "VTV2000",
       "y_true": 68,
-      "y_pred_top1": 368,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "VTV2014",
       "y_true": 330,
-      "y_pred_top1": 103,
+      "y_pred_top1": 124,
       "correct": false
     },
     {
       "video_id": "VTV2018",
       "y_true": 238,
-      "y_pred_top1": 319,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
       "video_id": "VTV2021",
       "y_true": 117,
-      "y_pred_top1": 369,
+      "y_pred_top1": 310,
       "correct": false
     },
     {
       "video_id": "VTV2022",
       "y_true": 117,
-      "y_pred_top1": 436,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "VTV2023",
       "y_true": 117,
-      "y_pred_top1": 436,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "VTV2024",
       "y_true": 117,
-      "y_pred_top1": 436,
+      "y_pred_top1": 356,
       "correct": false
     },
     {
       "video_id": "VTV2029",
       "y_true": 228,
-      "y_pred_top1": 303,
+      "y_pred_top1": 408,
       "correct": false
     },
     {
@@ -3502,31 +3502,31 @@
     {
       "video_id": "VTV2074",
       "y_true": 388,
-      "y_pred_top1": 177,
+      "y_pred_top1": 359,
       "correct": false
     },
     {
       "video_id": "VTV2075",
       "y_true": 388,
-      "y_pred_top1": 177,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV2080",
       "y_true": 331,
-      "y_pred_top1": 310,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV2082",
       "y_true": 390,
-      "y_pred_top1": 5,
+      "y_pred_top1": 188,
       "correct": false
     },
     {
       "video_id": "VTV2084",
       "y_true": 393,
-      "y_pred_top1": 5,
+      "y_pred_top1": 390,
       "correct": false
     },
     {
@@ -3538,14 +3538,14 @@
     {
       "video_id": "VTV2088",
       "y_true": 392,
-      "y_pred_top1": 350,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "VTV2104",
       "y_true": 366,
-      "y_pred_top1": 366,
-      "correct": true
+      "y_pred_top1": 296,
+      "correct": false
     },
     {
       "video_id": "VTV2116",
@@ -3562,25 +3562,25 @@
     {
       "video_id": "VTV2153",
       "y_true": 242,
-      "y_pred_top1": 242,
-      "correct": true
+      "y_pred_top1": 407,
+      "correct": false
     },
     {
       "video_id": "VTV2163",
       "y_true": 241,
-      "y_pred_top1": 148,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV2164",
       "y_true": 241,
-      "y_pred_top1": 148,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV2167",
       "y_true": 271,
-      "y_pred_top1": 244,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
@@ -3592,7 +3592,7 @@
     {
       "video_id": "VTV2174",
       "y_true": 167,
-      "y_pred_top1": 419,
+      "y_pred_top1": 182,
       "correct": false
     },
     {
@@ -3610,55 +3610,55 @@
     {
       "video_id": "VTV2201",
       "y_true": 43,
-      "y_pred_top1": 267,
+      "y_pred_top1": 416,
       "correct": false
     },
     {
       "video_id": "VTV2202",
       "y_true": 43,
-      "y_pred_top1": 15,
+      "y_pred_top1": 184,
       "correct": false
     },
     {
       "video_id": "VTV2203",
       "y_true": 43,
-      "y_pred_top1": 387,
+      "y_pred_top1": 402,
       "correct": false
     },
     {
       "video_id": "VTV2208",
       "y_true": 191,
-      "y_pred_top1": 191,
-      "correct": true
+      "y_pred_top1": 242,
+      "correct": false
     },
     {
       "video_id": "VTV2257",
       "y_true": 38,
-      "y_pred_top1": 118,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
       "video_id": "VTV2258",
       "y_true": 38,
-      "y_pred_top1": 132,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
       "video_id": "VTV2263",
       "y_true": 249,
-      "y_pred_top1": 113,
+      "y_pred_top1": 242,
       "correct": false
     },
     {
       "video_id": "VTV2272",
       "y_true": 359,
-      "y_pred_top1": 26,
-      "correct": false
+      "y_pred_top1": 359,
+      "correct": true
     },
     {
       "video_id": "VTV2294",
       "y_true": 16,
-      "y_pred_top1": 432,
+      "y_pred_top1": 237,
       "correct": false
     },
     {
@@ -3688,31 +3688,31 @@
     {
       "video_id": "VTV2357",
       "y_true": 193,
-      "y_pred_top1": 411,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV2358",
       "y_true": 193,
-      "y_pred_top1": 310,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV2359",
       "y_true": 193,
-      "y_pred_top1": 359,
+      "y_pred_top1": 154,
       "correct": false
     },
     {
       "video_id": "VTV2360",
       "y_true": 193,
-      "y_pred_top1": 93,
+      "y_pred_top1": 42,
       "correct": false
     },
     {
       "video_id": "VTV2367",
       "y_true": 386,
-      "y_pred_top1": 382,
+      "y_pred_top1": 381,
       "correct": false
     },
     {
@@ -3730,74 +3730,74 @@
     {
       "video_id": "VTV2388",
       "y_true": 306,
-      "y_pred_top1": 382,
+      "y_pred_top1": 381,
       "correct": false
     },
     {
       "video_id": "VTV2393",
       "y_true": 427,
-      "y_pred_top1": 297,
+      "y_pred_top1": 244,
       "correct": false
     },
     {
       "video_id": "VTV2397",
       "y_true": 424,
-      "y_pred_top1": 372,
+      "y_pred_top1": 296,
       "correct": false
     },
     {
       "video_id": "VTV2398",
       "y_true": 424,
-      "y_pred_top1": 372,
+      "y_pred_top1": 296,
       "correct": false
     },
     {
       "video_id": "VTV2399",
       "y_true": 424,
-      "y_pred_top1": 139,
+      "y_pred_top1": 296,
       "correct": false
     },
     {
       "video_id": "VTV2403",
       "y_true": 425,
-      "y_pred_top1": 402,
+      "y_pred_top1": 145,
       "correct": false
     },
     {
       "video_id": "VTV2523",
       "y_true": 107,
-      "y_pred_top1": 107,
-      "correct": true
+      "y_pred_top1": 429,
+      "correct": false
     },
     {
       "video_id": "VTV2524",
       "y_true": 107,
-      "y_pred_top1": 107,
-      "correct": true
+      "y_pred_top1": 19,
+      "correct": false
     },
     {
       "video_id": "VTV2525",
       "y_true": 107,
-      "y_pred_top1": 107,
-      "correct": true
+      "y_pred_top1": 198,
+      "correct": false
     },
     {
       "video_id": "VTV2527",
       "y_true": 104,
-      "y_pred_top1": 42,
+      "y_pred_top1": 103,
       "correct": false
     },
     {
       "video_id": "VTV2531",
       "y_true": 106,
-      "y_pred_top1": 407,
-      "correct": false
+      "y_pred_top1": 106,
+      "correct": true
     },
     {
       "video_id": "VTV2532",
       "y_true": 106,
-      "y_pred_top1": 407,
-      "correct": false
+      "y_pred_top1": 106,
+      "correct": true
     },
     {
       "video_id": "VTV2536",
@@ -3814,43 +3814,43 @@
     {
       "video_id": "VTV2544",
       "y_true": 81,
-      "y_pred_top1": 259,
+      "y_pred_top1": 382,
       "correct": false
     },
     {
       "video_id": "VTV2554",
       "y_true": 99,
-      "y_pred_top1": 432,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "VTV2555",
       "y_true": 99,
-      "y_pred_top1": 407,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV2602",
       "y_true": 4,
-      "y_pred_top1": 139,
+      "y_pred_top1": 185,
       "correct": false
     },
     {
       "video_id": "VTV2613",
       "y_true": 316,
-      "y_pred_top1": 144,
-      "correct": false
+      "y_pred_top1": 316,
+      "correct": true
     },
     {
       "video_id": "VTV2614",
       "y_true": 316,
-      "y_pred_top1": 407,
-      "correct": false
+      "y_pred_top1": 316,
+      "correct": true
     },
     {
       "video_id": "VTV2618",
       "y_true": 309,
-      "y_pred_top1": 120,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
@@ -3862,26 +3862,26 @@
     {
       "video_id": "VTV2624",
       "y_true": 336,
-      "y_pred_top1": 303,
+      "y_pred_top1": 382,
       "correct": false
     },
     {
       "video_id": "VTV2641",
       "y_true": 315,
-      "y_pred_top1": 79,
+      "y_pred_top1": 193,
       "correct": false
     },
     {
       "video_id": "VTV2642",
       "y_true": 315,
-      "y_pred_top1": 259,
+      "y_pred_top1": 193,
       "correct": false
     },
     {
       "video_id": "VTV2645",
       "y_true": 28,
-      "y_pred_top1": 28,
-      "correct": true
+      "y_pred_top1": 92,
+      "correct": false
     },
     {
       "video_id": "VTV2646",
@@ -3934,56 +3934,56 @@
     {
       "video_id": "VTV2691",
       "y_true": 86,
-      "y_pred_top1": 387,
+      "y_pred_top1": 79,
       "correct": false
     },
     {
       "video_id": "VTV2692",
       "y_true": 86,
-      "y_pred_top1": 387,
+      "y_pred_top1": 79,
       "correct": false
     },
     {
       "video_id": "VTV2693",
       "y_true": 86,
-      "y_pred_top1": 387,
-      "correct": false
+      "y_pred_top1": 86,
+      "correct": true
     },
     {
       "video_id": "VTV2699",
       "y_true": 92,
-      "y_pred_top1": 393,
-      "correct": false
+      "y_pred_top1": 92,
+      "correct": true
     },
     {
       "video_id": "VTV2700",
       "y_true": 92,
-      "y_pred_top1": 393,
-      "correct": false
+      "y_pred_top1": 92,
+      "correct": true
     },
     {
       "video_id": "VTV2710",
       "y_true": 98,
-      "y_pred_top1": 98,
-      "correct": true
+      "y_pred_top1": 226,
+      "correct": false
     },
     {
       "video_id": "VTV2711",
       "y_true": 98,
-      "y_pred_top1": 98,
-      "correct": true
+      "y_pred_top1": 370,
+      "correct": false
     },
     {
       "video_id": "VTV2712",
       "y_true": 98,
-      "y_pred_top1": 98,
-      "correct": true
+      "y_pred_top1": 370,
+      "correct": false
     },
     {
       "video_id": "VTV2713",
       "y_true": 98,
-      "y_pred_top1": 98,
-      "correct": true
+      "y_pred_top1": 259,
+      "correct": false
     },
     {
       "video_id": "VTV2718",
@@ -3994,25 +3994,25 @@
     {
       "video_id": "VTV2719",
       "y_true": 83,
-      "y_pred_top1": 432,
-      "correct": false
+      "y_pred_top1": 83,
+      "correct": true
     },
     {
       "video_id": "VTV2724",
       "y_true": 85,
-      "y_pred_top1": 85,
-      "correct": true
+      "y_pred_top1": 193,
+      "correct": false
     },
     {
       "video_id": "VTV2725",
       "y_true": 85,
-      "y_pred_top1": 386,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
       "video_id": "VTV2726",
       "y_true": 85,
-      "y_pred_top1": 386,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
@@ -4030,26 +4030,26 @@
     {
       "video_id": "VTV2732",
       "y_true": 95,
-      "y_pred_top1": 95,
-      "correct": true
+      "y_pred_top1": 382,
+      "correct": false
     },
     {
       "video_id": "VTV2733",
       "y_true": 95,
-      "y_pred_top1": 95,
-      "correct": true
+      "y_pred_top1": 382,
+      "correct": false
     },
     {
       "video_id": "VTV2770",
       "y_true": 431,
-      "y_pred_top1": 382,
+      "y_pred_top1": 5,
       "correct": false
     },
     {
       "video_id": "VTV2771",
       "y_true": 431,
-      "y_pred_top1": 431,
-      "correct": true
+      "y_pred_top1": 387,
+      "correct": false
     },
     {
       "video_id": "VTV2775",
@@ -4060,49 +4060,49 @@
     {
       "video_id": "VTV2778",
       "y_true": 421,
-      "y_pred_top1": 44,
+      "y_pred_top1": 259,
       "correct": false
     },
     {
       "video_id": "VTV2779",
       "y_true": 421,
-      "y_pred_top1": 13,
+      "y_pred_top1": 259,
       "correct": false
     },
     {
       "video_id": "VTV2791",
       "y_true": 110,
-      "y_pred_top1": 9,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
       "video_id": "VTV2792",
       "y_true": 110,
-      "y_pred_top1": 9,
+      "y_pred_top1": 72,
       "correct": false
     },
     {
       "video_id": "VTV2803",
       "y_true": 302,
-      "y_pred_top1": 296,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
       "video_id": "VTV2814",
       "y_true": 437,
-      "y_pred_top1": 432,
+      "y_pred_top1": 393,
       "correct": false
     },
     {
       "video_id": "VTV2915",
       "y_true": 8,
-      "y_pred_top1": 408,
+      "y_pred_top1": 279,
       "correct": false
     },
     {
       "video_id": "VTV2916",
       "y_true": 8,
-      "y_pred_top1": 408,
+      "y_pred_top1": 124,
       "correct": false
     },
     {
@@ -4120,145 +4120,145 @@
     {
       "video_id": "VTV2924",
       "y_true": 7,
-      "y_pred_top1": 154,
+      "y_pred_top1": 419,
       "correct": false
     },
     {
       "video_id": "VTV2925",
       "y_true": 7,
-      "y_pred_top1": 303,
+      "y_pred_top1": 153,
       "correct": false
     },
     {
       "video_id": "VTV2929",
       "y_true": 10,
-      "y_pred_top1": 436,
-      "correct": false
+      "y_pred_top1": 10,
+      "correct": true
     },
     {
       "video_id": "VTV2944",
       "y_true": 152,
-      "y_pred_top1": 152,
-      "correct": true
+      "y_pred_top1": 390,
+      "correct": false
     },
     {
       "video_id": "VTV2948",
       "y_true": 277,
-      "y_pred_top1": 175,
+      "y_pred_top1": 37,
       "correct": false
     },
     {
       "video_id": "VTV2952",
       "y_true": 147,
-      "y_pred_top1": 175,
+      "y_pred_top1": 292,
       "correct": false
     },
     {
       "video_id": "VTV2965",
       "y_true": 35,
-      "y_pred_top1": 240,
+      "y_pred_top1": 91,
       "correct": false
     },
     {
       "video_id": "VTV2966",
       "y_true": 35,
-      "y_pred_top1": 356,
+      "y_pred_top1": 91,
       "correct": false
     },
     {
       "video_id": "VTV2967",
       "y_true": 35,
-      "y_pred_top1": 10,
+      "y_pred_top1": 436,
       "correct": false
     },
     {
       "video_id": "VTV2983",
       "y_true": 240,
-      "y_pred_top1": 240,
-      "correct": true
+      "y_pred_top1": 91,
+      "correct": false
     },
     {
       "video_id": "VTV2984",
       "y_true": 240,
-      "y_pred_top1": 240,
-      "correct": true
+      "y_pred_top1": 77,
+      "correct": false
     },
     {
       "video_id": "VTV2988",
       "y_true": 121,
-      "y_pred_top1": 356,
+      "y_pred_top1": 355,
       "correct": false
     },
     {
       "video_id": "VTV2989",
       "y_true": 121,
-      "y_pred_top1": 356,
+      "y_pred_top1": 160,
       "correct": false
     },
     {
       "video_id": "VTV2997",
       "y_true": 225,
-      "y_pred_top1": 156,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV2998",
       "y_true": 225,
-      "y_pred_top1": 230,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV2999",
       "y_true": 225,
-      "y_pred_top1": 224,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV3000",
       "y_true": 225,
-      "y_pred_top1": 156,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV3003",
       "y_true": 224,
-      "y_pred_top1": 197,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV3004",
       "y_true": 224,
-      "y_pred_top1": 197,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
       "video_id": "VTV3008",
       "y_true": 311,
-      "y_pred_top1": 311,
-      "correct": true
+      "y_pred_top1": 89,
+      "correct": false
     },
     {
       "video_id": "VTV3009",
       "y_true": 311,
-      "y_pred_top1": 311,
-      "correct": true
+      "y_pred_top1": 373,
+      "correct": false
     },
     {
       "video_id": "VTV3015",
       "y_true": 373,
-      "y_pred_top1": 311,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "VTV3016",
       "y_true": 373,
-      "y_pred_top1": 311,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
       "video_id": "VTV3017",
       "y_true": 373,
-      "y_pred_top1": 311,
+      "y_pred_top1": 251,
       "correct": false
     },
     {
@@ -4276,19 +4276,19 @@
     {
       "video_id": "VTV3064",
       "y_true": 403,
-      "y_pred_top1": 403,
-      "correct": true
+      "y_pred_top1": 411,
+      "correct": false
     },
     {
       "video_id": "VTV3065",
       "y_true": 403,
-      "y_pred_top1": 403,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "VTV3076",
       "y_true": 405,
-      "y_pred_top1": 441,
+      "y_pred_top1": 395,
       "correct": false
     },
     {
@@ -4306,8 +4306,8 @@
     {
       "video_id": "VTV3092",
       "y_true": 402,
-      "y_pred_top1": 402,
-      "correct": true
+      "y_pred_top1": 185,
+      "correct": false
     },
     {
       "video_id": "VTV3093",
@@ -4336,20 +4336,20 @@
     {
       "video_id": "VTV3112",
       "y_true": 296,
-      "y_pred_top1": 296,
-      "correct": true
+      "y_pred_top1": 30,
+      "correct": false
     },
     {
       "video_id": "VTV3113",
       "y_true": 296,
-      "y_pred_top1": 296,
-      "correct": true
+      "y_pred_top1": 30,
+      "correct": false
     },
     {
       "video_id": "VTV3114",
       "y_true": 296,
-      "y_pred_top1": 296,
-      "correct": true
+      "y_pred_top1": 30,
+      "correct": false
     },
     {
       "video_id": "VTV3118",
@@ -4372,8 +4372,8 @@
     {
       "video_id": "VTV3124",
       "y_true": 298,
-      "y_pred_top1": 188,
-      "correct": false
+      "y_pred_top1": 298,
+      "correct": true
     },
     {
       "video_id": "VTV3125",
@@ -4384,25 +4384,25 @@
     {
       "video_id": "VTV3126",
       "y_true": 154,
-      "y_pred_top1": 154,
-      "correct": true
+      "y_pred_top1": 283,
+      "correct": false
     },
     {
       "video_id": "VTV3131",
       "y_true": 118,
-      "y_pred_top1": 118,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "VTV3132",
       "y_true": 118,
-      "y_pred_top1": 118,
-      "correct": true
+      "y_pred_top1": 87,
+      "correct": false
     },
     {
       "video_id": "VTV3173",
       "y_true": 131,
-      "y_pred_top1": 369,
+      "y_pred_top1": 404,
       "correct": false
     },
     {
@@ -4414,8 +4414,8 @@
     {
       "video_id": "VTV3175",
       "y_true": 131,
-      "y_pred_top1": 131,
-      "correct": true
+      "y_pred_top1": 356,
+      "correct": false
     },
     {
       "video_id": "VTV3222",
@@ -4432,8 +4432,8 @@
     {
       "video_id": "VTV3407",
       "y_true": 177,
-      "y_pred_top1": 177,
-      "correct": true
+      "y_pred_top1": 294,
+      "correct": false
     },
     {
       "video_id": "VTV3420",
@@ -4444,26 +4444,26 @@
     {
       "video_id": "VTV3421",
       "y_true": 308,
-      "y_pred_top1": 20,
-      "correct": false
+      "y_pred_top1": 308,
+      "correct": true
     },
     {
       "video_id": "VTV3425",
       "y_true": 265,
-      "y_pred_top1": 265,
-      "correct": true
+      "y_pred_top1": 310,
+      "correct": false
     },
     {
       "video_id": "VTV3426",
       "y_true": 265,
-      "y_pred_top1": 265,
-      "correct": true
+      "y_pred_top1": 310,
+      "correct": false
     },
     {
       "video_id": "VTV3427",
       "y_true": 265,
-      "y_pred_top1": 265,
-      "correct": true
+      "y_pred_top1": 310,
+      "correct": false
     },
     {
       "video_id": "VTV3440",
@@ -4474,31 +4474,31 @@
     {
       "video_id": "VTV3444",
       "y_true": 101,
-      "y_pred_top1": 154,
-      "correct": false
+      "y_pred_top1": 101,
+      "correct": true
     },
     {
       "video_id": "VTV3447",
       "y_true": 186,
-      "y_pred_top1": 186,
-      "correct": true
+      "y_pred_top1": 102,
+      "correct": false
     },
     {
       "video_id": "VTV3448",
       "y_true": 17,
-      "y_pred_top1": 205,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
       "video_id": "VTV3494",
       "y_true": 439,
-      "y_pred_top1": 439,
-      "correct": true
+      "y_pred_top1": 418,
+      "correct": false
     },
     {
       "video_id": "VTV3497",
       "y_true": 439,
-      "y_pred_top1": 411,
+      "y_pred_top1": 418,
       "correct": false
     },
     {
@@ -4516,8 +4516,8 @@
     {
       "video_id": "VTV3556",
       "y_true": 408,
-      "y_pred_top1": 408,
-      "correct": true
+      "y_pred_top1": 103,
+      "correct": false
     },
     {
       "video_id": "VTV3575",
@@ -4546,25 +4546,25 @@
     {
       "video_id": "VTV3606",
       "y_true": 148,
-      "y_pred_top1": 205,
-      "correct": false
+      "y_pred_top1": 148,
+      "correct": true
     },
     {
       "video_id": "VTV3620",
       "y_true": 377,
-      "y_pred_top1": 378,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV3625",
       "y_true": 377,
-      "y_pred_top1": 378,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV3628",
       "y_true": 257,
-      "y_pred_top1": 411,
+      "y_pred_top1": 418,
       "correct": false
     },
     {
@@ -4576,25 +4576,25 @@
     {
       "video_id": "VTV3634",
       "y_true": 342,
-      "y_pred_top1": 173,
+      "y_pred_top1": 244,
       "correct": false
     },
     {
       "video_id": "VTV3669",
       "y_true": 350,
-      "y_pred_top1": 350,
-      "correct": true
+      "y_pred_top1": 42,
+      "correct": false
     },
     {
       "video_id": "VTV3671",
       "y_true": 101,
-      "y_pred_top1": 131,
+      "y_pred_top1": 20,
       "correct": false
     },
     {
       "video_id": "VTV3672",
       "y_true": 17,
-      "y_pred_top1": 205,
+      "y_pred_top1": 210,
       "correct": false
     },
     {
@@ -4630,7 +4630,7 @@
     {
       "video_id": "VTV3739",
       "y_true": 342,
-      "y_pred_top1": 205,
+      "y_pred_top1": 429,
       "correct": false
     },
     {
@@ -4648,13 +4648,13 @@
     {
       "video_id": "VTV3784",
       "y_true": 377,
-      "y_pred_top1": 378,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
       "video_id": "VTV3786",
       "y_true": 377,
-      "y_pred_top1": 378,
+      "y_pred_top1": 97,
       "correct": false
     },
     {
@@ -4666,19 +4666,19 @@
     {
       "video_id": "VTV3789",
       "y_true": 61,
-      "y_pred_top1": 177,
+      "y_pred_top1": 173,
       "correct": false
     },
     {
       "video_id": "VTV3790",
       "y_true": 148,
-      "y_pred_top1": 205,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
       "video_id": "VTV3792",
       "y_true": 148,
-      "y_pred_top1": 205,
+      "y_pred_top1": 284,
       "correct": false
     },
     {
@@ -4702,14 +4702,14 @@
     {
       "video_id": "W00255T",
       "y_true": 21,
-      "y_pred_top1": 279,
+      "y_pred_top1": 150,
       "correct": false
     },
     {
       "video_id": "W00328T",
       "y_true": 43,
-      "y_pred_top1": 43,
-      "correct": true
+      "y_pred_top1": 173,
+      "correct": false
     },
     {
       "video_id": "W00374T",
@@ -4720,25 +4720,25 @@
     {
       "video_id": "W00398T",
       "y_true": 105,
-      "y_pred_top1": 209,
+      "y_pred_top1": 354,
       "correct": false
     },
     {
       "video_id": "W00496T",
       "y_true": 49,
-      "y_pred_top1": 198,
+      "y_pred_top1": 354,
       "correct": false
     },
     {
       "video_id": "W00497T",
       "y_true": 50,
-      "y_pred_top1": 209,
+      "y_pred_top1": 354,
       "correct": false
     },
     {
       "video_id": "W00508T",
       "y_true": 62,
-      "y_pred_top1": 79,
+      "y_pred_top1": 44,
       "correct": false
     },
     {
@@ -4750,19 +4750,19 @@
     {
       "video_id": "W00516T",
       "y_true": 51,
-      "y_pred_top1": 205,
+      "y_pred_top1": 369,
       "correct": false
     },
     {
       "video_id": "W00584T",
       "y_true": 48,
-      "y_pred_top1": 48,
-      "correct": true
+      "y_pred_top1": 25,
+      "correct": false
     },
     {
       "video_id": "W00655T",
       "y_true": 56,
-      "y_pred_top1": 426,
+      "y_pred_top1": 164,
       "correct": false
     },
     {
@@ -4774,25 +4774,25 @@
     {
       "video_id": "W00734T",
       "y_true": 76,
-      "y_pred_top1": 219,
+      "y_pred_top1": 364,
       "correct": false
     },
     {
       "video_id": "W00758T",
       "y_true": 99,
-      "y_pred_top1": 252,
+      "y_pred_top1": 378,
       "correct": false
     },
     {
       "video_id": "W00770T",
       "y_true": 88,
-      "y_pred_top1": 205,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "W00780T",
       "y_true": 93,
-      "y_pred_top1": 223,
+      "y_pred_top1": 156,
       "correct": false
     },
     {
@@ -4804,19 +4804,19 @@
     {
       "video_id": "W00885T",
       "y_true": 115,
-      "y_pred_top1": 6,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "W01032T",
       "y_true": 129,
-      "y_pred_top1": 175,
+      "y_pred_top1": 245,
       "correct": false
     },
     {
       "video_id": "W01033T",
       "y_true": 140,
-      "y_pred_top1": 284,
+      "y_pred_top1": 82,
       "correct": false
     },
     {
@@ -4828,7 +4828,7 @@
     {
       "video_id": "W01162T",
       "y_true": 425,
-      "y_pred_top1": 190,
+      "y_pred_top1": 433,
       "correct": false
     },
     {
@@ -4840,8 +4840,8 @@
     {
       "video_id": "W01351T",
       "y_true": 142,
-      "y_pred_top1": 142,
-      "correct": true
+      "y_pred_top1": 378,
+      "correct": false
     },
     {
       "video_id": "W01407",
@@ -4852,25 +4852,25 @@
     {
       "video_id": "W01516T",
       "y_true": 156,
-      "y_pred_top1": 322,
+      "y_pred_top1": 378,
       "correct": false
     },
     {
       "video_id": "W01583T",
       "y_true": 158,
-      "y_pred_top1": 150,
+      "y_pred_top1": 436,
       "correct": false
     },
     {
       "video_id": "W01629T",
       "y_true": 162,
-      "y_pred_top1": 210,
-      "correct": false
+      "y_pred_top1": 162,
+      "correct": true
     },
     {
       "video_id": "W01692T",
       "y_true": 174,
-      "y_pred_top1": 210,
+      "y_pred_top1": 41,
       "correct": false
     },
     {
@@ -4882,13 +4882,13 @@
     {
       "video_id": "W01979T",
       "y_true": 196,
-      "y_pred_top1": 209,
+      "y_pred_top1": 358,
       "correct": false
     },
     {
       "video_id": "W01996T",
       "y_true": 189,
-      "y_pred_top1": 48,
+      "y_pred_top1": 184,
       "correct": false
     },
     {
@@ -4906,14 +4906,14 @@
     {
       "video_id": "W02142T",
       "y_true": 208,
-      "y_pred_top1": 91,
-      "correct": false
+      "y_pred_top1": 208,
+      "correct": true
     },
     {
       "video_id": "W02143T",
       "y_true": 209,
-      "y_pred_top1": 209,
-      "correct": true
+      "y_pred_top1": 82,
+      "correct": false
     },
     {
       "video_id": "W02164T",
@@ -4924,19 +4924,19 @@
     {
       "video_id": "W02219",
       "y_true": 225,
-      "y_pred_top1": 9,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "W02222",
       "y_true": 224,
-      "y_pred_top1": 9,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "W02270T",
       "y_true": 217,
-      "y_pred_top1": 163,
+      "y_pred_top1": 183,
       "correct": false
     },
     {
@@ -4948,25 +4948,25 @@
     {
       "video_id": "W02329T",
       "y_true": 237,
-      "y_pred_top1": 94,
+      "y_pred_top1": 356,
       "correct": false
     },
     {
       "video_id": "W02337T",
       "y_true": 235,
-      "y_pred_top1": 235,
-      "correct": true
+      "y_pred_top1": 355,
+      "correct": false
     },
     {
       "video_id": "W02338T",
       "y_true": 236,
-      "y_pred_top1": 148,
+      "y_pred_top1": 436,
       "correct": false
     },
     {
       "video_id": "W02360T",
       "y_true": 231,
-      "y_pred_top1": 209,
+      "y_pred_top1": 190,
       "correct": false
     },
     {
@@ -4984,8 +4984,8 @@
     {
       "video_id": "W02461T",
       "y_true": 252,
-      "y_pred_top1": 252,
-      "correct": true
+      "y_pred_top1": 365,
+      "correct": false
     },
     {
       "video_id": "W02520T",
@@ -4996,20 +4996,20 @@
     {
       "video_id": "W02576T",
       "y_true": 412,
-      "y_pred_top1": 382,
+      "y_pred_top1": 10,
       "correct": false
     },
     {
       "video_id": "W02656T",
       "y_true": 272,
-      "y_pred_top1": 10,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
       "video_id": "W02932T",
       "y_true": 322,
-      "y_pred_top1": 322,
-      "correct": true
+      "y_pred_top1": 378,
+      "correct": false
     },
     {
       "video_id": "W03011T",
@@ -5020,79 +5020,79 @@
     {
       "video_id": "W03450N",
       "y_true": 339,
-      "y_pred_top1": 418,
+      "y_pred_top1": 412,
       "correct": false
     },
     {
       "video_id": "W03450T",
       "y_true": 339,
-      "y_pred_top1": 418,
+      "y_pred_top1": 412,
       "correct": false
     },
     {
       "video_id": "W03524",
       "y_true": 350,
-      "y_pred_top1": 59,
+      "y_pred_top1": 355,
       "correct": false
     },
     {
       "video_id": "W03560",
       "y_true": 286,
-      "y_pred_top1": 91,
+      "y_pred_top1": 208,
       "correct": false
     },
     {
       "video_id": "W03562",
       "y_true": 362,
-      "y_pred_top1": 232,
+      "y_pred_top1": 79,
       "correct": false
     },
     {
       "video_id": "W03615",
       "y_true": 391,
-      "y_pred_top1": 105,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "W03659T",
       "y_true": 364,
-      "y_pred_top1": 90,
+      "y_pred_top1": 59,
       "correct": false
     },
     {
       "video_id": "W03685T",
       "y_true": 365,
-      "y_pred_top1": 209,
+      "y_pred_top1": 123,
       "correct": false
     },
     {
       "video_id": "W03719T",
       "y_true": 377,
-      "y_pred_top1": 97,
+      "y_pred_top1": 378,
       "correct": false
     },
     {
       "video_id": "W03722T",
       "y_true": 379,
-      "y_pred_top1": 379,
-      "correct": true
+      "y_pred_top1": 142,
+      "correct": false
     },
     {
       "video_id": "W03930T",
       "y_true": 395,
-      "y_pred_top1": 176,
+      "y_pred_top1": 51,
       "correct": false
     },
     {
       "video_id": "W03931N",
       "y_true": 396,
-      "y_pred_top1": 176,
+      "y_pred_top1": 123,
       "correct": false
     },
     {
       "video_id": "W03931T",
       "y_true": 396,
-      "y_pred_top1": 176,
+      "y_pred_top1": 123,
       "correct": false
     },
     {
@@ -5104,7 +5104,7 @@
     {
       "video_id": "W03959",
       "y_true": 393,
-      "y_pred_top1": 51,
+      "y_pred_top1": 92,
       "correct": false
     },
     {
@@ -5116,13 +5116,13 @@
     {
       "video_id": "W03965",
       "y_true": 389,
-      "y_pred_top1": 82,
+      "y_pred_top1": 314,
       "correct": false
     },
     {
       "video_id": "W04001",
       "y_true": 398,
-      "y_pred_top1": 97,
+      "y_pred_top1": 123,
       "correct": false
     },
     {
@@ -5140,37 +5140,37 @@
     {
       "video_id": "Y0016",
       "y_true": 227,
-      "y_pred_top1": 226,
+      "y_pred_top1": 78,
       "correct": false
     },
     {
       "video_id": "Y0017",
       "y_true": 227,
-      "y_pred_top1": 325,
-      "correct": false
+      "y_pred_top1": 227,
+      "correct": true
     },
     {
       "video_id": "Y0018",
       "y_true": 45,
-      "y_pred_top1": 425,
+      "y_pred_top1": 335,
       "correct": false
     },
     {
       "video_id": "Y0020",
       "y_true": 339,
-      "y_pred_top1": 54,
+      "y_pred_top1": 77,
       "correct": false
     },
     {
       "video_id": "Y0173",
       "y_true": 18,
-      "y_pred_top1": 134,
+      "y_pred_top1": 99,
       "correct": false
     },
     {
       "video_id": "Y0174",
       "y_true": 19,
-      "y_pred_top1": 144,
+      "y_pred_top1": 77,
       "correct": false
     },
     {
@@ -5182,37 +5182,37 @@
     {
       "video_id": "Y0179",
       "y_true": 134,
-      "y_pred_top1": 443,
+      "y_pred_top1": 382,
       "correct": false
     },
     {
       "video_id": "Y0199",
       "y_true": 22,
-      "y_pred_top1": 9,
+      "y_pred_top1": 329,
       "correct": false
     },
     {
       "video_id": "Y0201",
       "y_true": 22,
-      "y_pred_top1": 9,
+      "y_pred_top1": 329,
       "correct": false
     },
     {
       "video_id": "Y0218",
       "y_true": 29,
-      "y_pred_top1": 443,
-      "correct": false
+      "y_pred_top1": 29,
+      "correct": true
     },
     {
       "video_id": "Y0219",
       "y_true": 29,
-      "y_pred_top1": 443,
+      "y_pred_top1": 392,
       "correct": false
     },
     {
       "video_id": "Y0261",
       "y_true": 413,
-      "y_pred_top1": 41,
+      "y_pred_top1": 55,
       "correct": false
     },
     {
@@ -5242,56 +5242,56 @@
     {
       "video_id": "Y0286",
       "y_true": 114,
-      "y_pred_top1": 41,
-      "correct": false
+      "y_pred_top1": 114,
+      "correct": true
     },
     {
       "video_id": "Y0321",
       "y_true": 55,
-      "y_pred_top1": 278,
+      "y_pred_top1": 80,
       "correct": false
     },
     {
       "video_id": "Y0323",
       "y_true": 417,
-      "y_pred_top1": 443,
+      "y_pred_top1": 392,
       "correct": false
     },
     {
       "video_id": "Y0324",
       "y_true": 417,
-      "y_pred_top1": 443,
+      "y_pred_top1": 353,
       "correct": false
     },
     {
       "video_id": "Y0356",
       "y_true": 53,
-      "y_pred_top1": 353,
+      "y_pred_top1": 77,
       "correct": false
     },
     {
       "video_id": "Y0371",
       "y_true": 187,
-      "y_pred_top1": 443,
+      "y_pred_top1": 249,
       "correct": false
     },
     {
       "video_id": "Y0372",
       "y_true": 187,
-      "y_pred_top1": 43,
+      "y_pred_top1": 393,
       "correct": false
     },
     {
       "video_id": "Y0470",
       "y_true": 78,
-      "y_pred_top1": 392,
+      "y_pred_top1": 89,
       "correct": false
     },
     {
       "video_id": "Y0471",
       "y_true": 78,
-      "y_pred_top1": 78,
-      "correct": true
+      "y_pred_top1": 89,
+      "correct": false
     },
     {
       "video_id": "Y0474",
@@ -5314,19 +5314,19 @@
     {
       "video_id": "Y0615",
       "y_true": 324,
-      "y_pred_top1": 364,
+      "y_pred_top1": 77,
       "correct": false
     },
     {
       "video_id": "Y0616",
       "y_true": 262,
-      "y_pred_top1": 383,
+      "y_pred_top1": 78,
       "correct": false
     },
     {
       "video_id": "Y0617",
       "y_true": 263,
-      "y_pred_top1": 382,
+      "y_pred_top1": 393,
       "correct": false
     },
     {

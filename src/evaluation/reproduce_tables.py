@@ -95,7 +95,8 @@ PUBLISHED_TABLE_11 = {
     "r2plus1d_r50": {"top1": 13.19, "top5": 19.17, "top10": 22.44, "macro_f1": 5.24, "head_top1": 26.06, "medium_top1": 1.49, "tail_top1": 1.04},
     "r2plus1d_18": {"top1": 13.19, "top5": 19.17, "top10": 22.44, "macro_f1": 5.24, "head_top1": 26.06, "medium_top1": 1.49, "tail_top1": 1.04},
     "swin3d_t": {"top1": 31.00, "top5": 55.24, "top10": 66.40, "macro_f1": 21.28, "head_top1": 44.13, "medium_top1": 25.37, "tail_top1": 9.84},
-    # TimeSformer and ViViT are pending
+    "timesformer_base": {"top1": 30.44, "top5": 56.60, "top10": 66.52, "macro_f1": 21.62, "head_top1": 41.78, "medium_top1": 28.36, "tail_top1": 8.29},
+    "vivit_base": {"top1": 21.87, "top5": 44.87, "top10": 55.92, "macro_f1": 14.32, "head_top1": 30.99, "medium_top1": 19.40, "tail_top1": 5.18},
     "mediapipe_tgcn": {"top1": 14.43, "top5": 29.76, "top10": 38.56, "macro_f1": 9.50, "head_top1": 20.19, "medium_top1": 12.31, "tail_top1": 4.66},
     "mmpose_tgcn": {"top1": 13.42, "top5": 30.10, "top10": 41.26, "macro_f1": 8.22, "head_top1": 19.72, "medium_top1": 10.07, "tail_top1": 4.15},
     "vitpose_tgcn": {"top1": 15.45, "top5": 31.91, "top10": 41.04, "macro_f1": 9.89, "head_top1": 21.36, "medium_top1": 14.55, "tail_top1": 3.63},

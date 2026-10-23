@@ -4,7 +4,7 @@
   "split": "signer_independent_447",
   "num_classes": 447,
   "test_samples": 887,
-  "checkpoint": "d:\\projects\\kltn\\hpc_reproduce\\checkpoints\\3d\\r2plus1d_r50\\r2plus1d_r50_seed42_augsimple_protosi_reg_v1\\test_predictions.npz",
+  "checkpoint": "D:/projects/kltn/hpc_reproduce/checkpoints/3d/r2plus1d_r50/r2plus1d_r50_seed42_augsimple_protosi_reg_v1/test_predictions.npz",
   "metrics": {
     "top1": 13.19,
     "top5": 19.17,
