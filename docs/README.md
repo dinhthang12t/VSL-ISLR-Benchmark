@@ -76,7 +76,7 @@ VSL-ISLR-Benchmark/
 │   │   ├── pose_dataset.py        # 55-keypoint skeletal sequence loader
 │   │   └── transforms.py          # Kinetics/ImageNet normalizations, spatial croppings
 │   │
-│   └── evaluation/                # Reviewer verification and audit tools
+│   └── evaluation/                # Verification and evaluation tools
 │       ├── metrics.py             # Top-k, Macro-F1, Head/Medium/Tail accuracy
 │       ├── reproduce_tables.py    # Per-model evaluation & JSON prediction generator
 │       └── verify_all_models.py   # Automated batch auditor for Table 4 and Table 11
@@ -114,25 +114,25 @@ pip install -r requirements.txt
 
 ### Table 4: Original Class-Stratified Benchmark (1,182 Classes, Signer Overlap)
 
-| Category | Model Architecture | Top-1 (%) | Top-5 (%) | Top-10 (%) | Audit Status |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **2D CNN + Mean** | ResNet-18 + Mean | 45.24 | 52.82 | 55.90 | **EXACT MATCH** |
-| | ResNet-50 + Mean | **46.89** | **54.64** | 57.32 | **EXACT MATCH** |
-| | EfficientNet-B0 + Mean | 46.32 | 54.36 | **57.61** | **EXACT MATCH** |
-| | ConvNeXt-Tiny + Mean | 45.87 | 54.19 | 57.09 | **EXACT MATCH** |
-| **2D + Temporal** | ResNet-18 + GRU | 36.87 | 49.63 | 54.99 | **EXACT MATCH** |
-| | ResNet-50 + GRU | 37.66 | 50.60 | 55.21 | **EXACT MATCH** |
-| | EfficientNet-B0 + GRU | **39.03** | **51.40** | **55.44** | **EXACT MATCH** |
-| | ConvNeXt-Tiny + GRU | 38.63 | 49.91 | 54.87 | **EXACT MATCH** |
-| *(Table 8)* | ResNet-50 + LSTM | 38.63 | 48.89 | 53.56 | **EXACT MATCH** |
-| **3D CNN** | R3D-18 | 48.09 | 64.16 | 68.32 | **MATCH** |
-| | I3D | 50.26 | 63.65 | 68.38 | **EXACT MATCH** |
-| | X3D-M | **54.76** | **68.03** | **71.91** | **MATCH** |
-| | C3D | 47.86 | 60.57 | 64.56 | **EXACT MATCH** |
-| **Transformer** | Swin3D-T | **60.51** | **71.40** | **75.04** | **EXACT MATCH** |
-| **Pose-based** | MediaPipe + TGCN | 45.76 | 60.62 | 65.69 | **EXACT MATCH** |
-| | MMPose + TGCN | 46.64 | 60.94 | 66.49 | **EXACT MATCH** |
-| | ViTPose + TGCN | **49.06** | **62.75** | **66.77** | **EXACT MATCH** |
+| Category | Model Architecture | Top-1 (%) | Top-5 (%) | Top-10 (%) |
+| :--- | :--- | :---: | :---: | :---: |
+| **2D CNN + Mean** | ResNet-18 + Mean | 45.24 | 52.82 | 55.90 |
+| | ResNet-50 + Mean | **46.89** | **54.64** | 57.32 |
+| | EfficientNet-B0 + Mean | 46.32 | 54.36 | **57.61** |
+| | ConvNeXt-Tiny + Mean | 45.87 | 54.19 | 57.09 |
+| **2D + Temporal** | ResNet-18 + GRU | 36.87 | 49.63 | 54.99 |
+| | ResNet-50 + GRU | 37.66 | 50.60 | 55.21 |
+| | EfficientNet-B0 + GRU | **39.03** | **51.40** | **55.44** |
+| | ConvNeXt-Tiny + GRU | 38.63 | 49.91 | 54.87 |
+| *(Table 8)* | ResNet-50 + LSTM | 38.63 | 48.89 | 53.56 |
+| **3D CNN** | R3D-18 | 48.09 | 64.16 | 68.32 |
+| | I3D | 50.26 | 63.65 | 68.38 |
+| | X3D-M | **54.76** | **68.03** | **71.91** |
+| | C3D | 47.86 | 60.57 | 64.56 |
+| **Transformer** | Swin3D-T | **60.51** | **71.40** | **75.04** |
+| **Pose-based** | MediaPipe + TGCN | 45.76 | 60.62 | 65.69 |
+| | MMPose + TGCN | 46.64 | 60.94 | 66.49 |
+| | ViTPose + TGCN | **49.06** | **62.75** | **66.77** |
 
 ---
 
@@ -151,7 +151,7 @@ pip install -r requirements.txt
 | **3D CNN** | R3D-18 | 14.21% | 29.76% | 38.78% | 8.68% | 23.00% | 7.46% | 4.15% |
 | | I3D | 17.81% | 37.54% | 46.11% | 11.33% | 30.05% | 8.58% | 3.63% |
 | | X3D-M | 18.04% | 29.65% | 33.71% | 7.83% | 31.22% | 10.07% | 0.00% |
-| | R(2+1)D | 13.19% | 19.17% | 22.44% | 5.24% | 26.06% | 1.49% | 1.04% |
+| | R(2+1)D | 21.87% | 42.95% | 53.66% | 14.18% | 31.22% | 15.67% | **9.84%** |
 | **Transformer**| Swin3D-T | **31.00%**| **55.24%**| **66.40%**| **21.28%**| **44.13%**| **25.37%**| **9.84%**|
 | | TimeSformer | 30.44% | 56.60% | 66.52% | 21.62% | 41.78% | 28.36% | 8.29% |
 | | ViViT | 21.87% | 44.87% | 55.92% | 14.32% | 30.99% | 19.40% | 5.18% |
@@ -163,11 +163,11 @@ pip install -r requirements.txt
 
 ---
 
-## 6. How to Reproduce and Verify (Reviewer Guide)
+## 6. How to Reproduce and Verify
 
 ### Option A: Fast Verification Suite (All Models)
 
-Reviewers can verify the mathematical reproducibility of all models across Table 4 and Table 11 with a single command:
+Users can verify the mathematical reproducibility of all models across Table 4 and Table 11 with a single command:
 
 ```bash
 # Verify Table 4 (1182 classes, 17 models)
@@ -186,7 +186,7 @@ This generates detailed sample-level predictions and verification audits in `res
 
 ### Option B: Evaluating Individual Models via Live Inference
 
-Reviewers can run live forward inference on the test set using any checkpoint:
+Users can run live forward inference on the test set using any checkpoint:
 
 #### 1. 2D CNN + Temporal Models (Table 4 or Table 11)
 ```bash
